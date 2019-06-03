@@ -4,7 +4,10 @@
 **The HaBA Way**
 
 ## Lectures
-[Lorenz](/1 - Lecture/Lecture Lorenz/)
+ - [Lorenz](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Lorenz)
+ - [Alex](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Alexander)
+ - [Iris](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Iris)
+ - [Manuel](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Manuel)
 
 ## Team Logistics
 
