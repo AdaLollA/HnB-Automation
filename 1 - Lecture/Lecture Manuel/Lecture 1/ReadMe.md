@@ -1,3 +1,7 @@
+# Lecture 1
+## S1810455012, Manuel Leibetseder
+
+
 # Movie Takeaways 
 
 - big bang
