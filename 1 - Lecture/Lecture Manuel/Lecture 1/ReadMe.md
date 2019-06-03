@@ -81,5 +81,3 @@
 	- google home
 	- homekit
 	- alexa
-
-##  
