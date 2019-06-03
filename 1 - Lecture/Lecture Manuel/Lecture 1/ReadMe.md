@@ -73,4 +73,13 @@
 - lack of privacy
 - remote access
 - room exchange
-- 
+
+## Where is the killer app?
+- no killer app there
+- all big vendors good at integrating
+- e.g.
+	- google home
+	- homekit
+	- alexa
+
+##  
