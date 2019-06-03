@@ -4,7 +4,7 @@
 **The HaBA Way**
 
 ## Lectures
-	[Lorenz](/"1 - Lecture"/"Lecture Lorenz")
+	[Lorenz](/1 - Lecture/Lecture Lorenz)
 
 ## Team Logistics
 
