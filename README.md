@@ -23,8 +23,14 @@
 
 ### Project Meeting Days
 - Week 1:
-	-  Wednesday, May, 5th 2019
-	-  Saturday, May, 8th 2019
+	-  Wednesday, June 5th 2019
+	-  Saturday, June 8th 2019
 
 - Week 2:
-	
+	- Wednesday, June 12th
+	- Thursday, June 13th
+	- Friday, June 14th
+
+- Week 3:
+	- Monday, June 17th
+	- Tuesday, June 18th
