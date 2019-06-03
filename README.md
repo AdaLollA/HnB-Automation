@@ -4,7 +4,7 @@
 **The HaBA Way**
 
 ## Lectures
-	[Lorenz](.gitignore)
+	[Lorenz](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Lorenz)
 
 ## Team Logistics
 
