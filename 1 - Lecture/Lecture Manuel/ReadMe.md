@@ -6,8 +6,8 @@ From this overview you can navigate through the lecture notes.
 
 ### Overview
 
-- [Lecture 1](Lecture 1/ReadMe.md)
-- [Lecture 2](Lecture 2/ReadMe.md)
+- [Lecture 1](Lecture%201)
+- [Lecture 2](Lecture%202)
 
 #### Lecture 1
 Consisted of mostly an overview of home and building automation. Due to problems with the hardware setup we were not able to do any practical examples during that session.
