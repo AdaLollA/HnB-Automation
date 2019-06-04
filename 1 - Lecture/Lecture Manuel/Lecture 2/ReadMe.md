@@ -68,9 +68,37 @@ Like with the LED we were able to get a LED-strip up and running, by help of the
 ![](challenge2/ledstrip.png)
 
 
-## Smart Lock
-So we had to come up with a custom implementation of a smart lock. We were able to do this with a relais, a smart lock and two buttons on the hardware side. We still used NodeRED to broadcast messages to the relais, when the buttons were pressed. 
+## Light Sensor
+As the third challenge we needed to get up a lightsensor. The used [NodeRED]() to read values from the sensor and visualize it on the NodeRED GUI. 
 
 ### NodeRED
 
- 
+![](challenge3/flow_light_sensor.PNG)
+### Code in Setup.cpp
+			
+		analog(light).with_precision(10);
+		
+### Hardware Setup
+
+![](challenge3/light_sensor.jpeg)
+	
+### GUI
+![](challenge3/ui_light_sensor.PNG)
+
+## Smart Lock
+So we had to come up with a custom implementation of a smart lock. We were able to do this with a relais, a smart lock and two buttons on the hardware side. We still used [NodeRED](lock/lock-flow.json) to broadcast messages to the relais, when the buttons were pressed. 
+
+### Hardware Setup
+
+![](lock/locked.jpg)
+![](lock/unlocked.jpg)
+
+### Web Research
+As a last challenge we needed to research about ways to secure a smart lock for enabling it for access over the internet. The following findings and links were found on researching the internet:
+
+ - [128 AES Encryption](https://gizmodo.com/are-smart-locks-secure-or-just-dumb-511093690)
+ - [Public-Key Infrastructure](https://gizmodo.com/are-smart-locks-secure-or-just-dumb-511093690)
+ - [Electric Imp on the Wi-Fi](https://gizmodo.com/are-smart-locks-secure-or-just-dumb-511093690)
+ - [Blacklist Key](https://gizmodo.com/are-smart-locks-secure-or-just-dumb-511093690)
+ - [VPN](https://www.tomsguide.com/us/secure-smart-home-how-to,news-19380.html)
+ - [Smart Bridges](https://unitedlocksmith.net/blog/8-smart-locks-that-you-can-unlock-with-your-smartphone)
