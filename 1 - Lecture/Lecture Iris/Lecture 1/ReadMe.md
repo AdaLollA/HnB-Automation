@@ -133,11 +133,26 @@ I would appreciate it, if some of the important information would be shown a lit
 ### Update Raspberry Pi Image
 can either happen by flashing the new image or by upgrading in the User Menu of the Raspberry Pi. When upgrading via the User Menu, the new version is pulled from git, the current version is uninstalled and the new version is installed.
 
-Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli flashes them therefore for us.
+Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli flashes them therefore for us. After the nodes were flashed we were able to adopt them to our Raspberry Pi.
 
 **After Updating:**
 - run "iot" in command line
 - run "upgrade_cache"
+
+### Hardware Setup
+1. connect a button to node1
+    - ground cable (black) connected to G (ground)
+    - signal (S) connected to D3
+    - Volt (V) connected to 5V
+
+### Final Software Setup
+1. set following in setup.cpp of node1 and node2: 
+    - 
+    - 
+2. In the NodeRed interface make the following changes:
+    - set the output mqtt node to: node2/blue/set
+
+![Flow Blue LED](./images/flow_blue_led.PNG)
 
 ## Switch RGB Light with Colour Picker
 
@@ -181,6 +196,8 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
     - connect volt pin to 3V3
     - connect ground to ground
 
+![Light Sensor](./images/light_sensor.jpeg)
+
 ### Software Setup
 1. set following in setup.cpp of node: analog(light).with_precision(10);
     - light is the name of the input source - has to be used in NodeRed later
@@ -199,7 +216,11 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
 
 
 
-
+Node1:
+- input(button, D1, "depressed", "pressed"); 
+Node2:
+- input(button, D2, "depressed", "pressed"); 
+- relais(lock, D1, "on", "off");
 
 
 
