@@ -1,4 +1,4 @@
-# Day #2
+#Lecture #2
 
 ## Setting up the Pi, creating nodes and dongles
 
