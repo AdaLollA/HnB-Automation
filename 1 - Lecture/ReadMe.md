@@ -3,9 +3,9 @@ This part of the repository contains the lecture contributions and notes of the 
 
 ## Overview
 
-[Iris](Lecture Iris/ReadMe.md)
-[Alexander](Lecture Alexander/ReadMe.md)
-[Lorenz](Lecture Lorenz/ReadMe.md)
-[Michael](Lecture Michael/ReadMe.md)
-[Manuel](Lecture Manuel/ReadMe.md)
+- [Iris](Lecture Iris)
+- [Alexander](Lecture Alexander)
+- [Lorenz](Lecture Lorenz)
+- [Michael](Lecture Michael)
+- [Manuel](Lecture Manuel)
 
