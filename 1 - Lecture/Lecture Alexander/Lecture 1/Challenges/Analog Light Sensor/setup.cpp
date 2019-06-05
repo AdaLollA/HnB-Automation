@@ -1,0 +1,1 @@
+analog(light).with_precision(10);
