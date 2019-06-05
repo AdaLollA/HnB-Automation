@@ -147,8 +147,8 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
 
 ### Final Software Setup
 1. set following in setup.cpp of node1 and node2: 
-    - 
-    - 
+	- output(blue, ONBOARDLED, "off", "on").set("off");
+	- input(b1, D3, "depressed", "pressed");
 2. In the NodeRed interface make the following changes:
     - set the output mqtt node to: node2/blue/set
 
@@ -214,13 +214,32 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
 ![Flow Light Sensor](./images/flow_light_sensor.PNG)
 ![UI Light Sensor](./images/ui_light_sensor.PNG)
 
+## Smart Lock
+Setup of a lock that can be locked/unlocked via buttons on two different Wemos or via Phone.
 
+### Hardware Setup
+1. connect a relay to the lock (setup can be seen in picture below)
+2. two Wemos are used
+3. connect one button to each of the Wemos (we used a breadboard for one of the Wemos)
+4. connect the relay to the breadboard used with one of the Wemos
 
-Node1:
-- input(button, D1, "depressed", "pressed"); 
-Node2:
-- input(button, D2, "depressed", "pressed"); 
-- relais(lock, D1, "on", "off");
+![Lock Setup](./images/lock_setup.jpg)
+
+### Software Setup
+1. set following setup.cpp of Node1 (only having one button attached):
+    - input(button, D1, "depressed", "pressed");
+2. set following setup.cpp of Node2 (having the breadboard with button + lock connected)
+    - input(button, D2, "depressed", "pressed"); 
+    - relais(lock, D1, "on", "off");
+3. In Node Red, we used basically the same setup as when lighting the single LED (first task)
+    - Mqtt input connected to rpe, connected to a function (same as in first task), connected to a switch, connected to the mqtt lock
+    - the mqtt lock is a mqtt output where "node2/lock/set" is set as a topic
+    - Instead of only one Mqtt input as in the first task, we now need two inputs (because we have two buttons)
+        - one is set to "node1/button"
+        - one is set to "node2/button"
+        - both are connected ro the rpe
+
+![Flow Smart Lock](./images/flow_lock.PNG)
 
 
 
