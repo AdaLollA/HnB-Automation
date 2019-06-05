@@ -1,5 +1,5 @@
 # Lecture 2
-## Hello World of IoT and H&B Automation - Day 2
+## Lighting an LED Day 2
 ### Update Raspberry Pi Image
 can either happen by flashing the new image or by upgrading in the User Menu of the Raspberry Pi. When upgrading via the User Menu, the new version is pulled from git, the current version is uninstalled and the new version is installed.
 
