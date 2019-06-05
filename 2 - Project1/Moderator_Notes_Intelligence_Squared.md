@@ -3,7 +3,7 @@ We watched an Intelligence² debate to get a feeling for how the moderator shall
 
 ## Beginning of debate
 1. present debaters (names)
-2. present topic - what is the topic and what is the exact question that the debates are for or against
+2. present motion - what is the topic and what is the exact question that the debates are for or against
 3. present debaters in detail (what do they work, which fields do they work in, ...)
 4. announce round 1
 
@@ -12,7 +12,7 @@ In round 1 every debater present his/her starting points
 - take turns with pro and con persons
 - after a pro person, a con person should hold his/her starting speech and vice versa
 
-## Round 2
+## Round 2 - Rebuttal
 After round 1 the topic is stated once again. Process of round 2:
 - moderator presents topics of each group - "group ... raised the question that..." etc.
 - debaters address each other directly and take questions from audience and moderator
