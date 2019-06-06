@@ -88,20 +88,27 @@ iot install clean
 platformio platform update
 ```
 
-## 2.5
-use c mounted in mnt/ and copy node config from there into user directory (it represents the windows c). then edit the config file and enter the wifi hotspot credentials.
+## 2.5 Test Deployment
+To test the deployment system we use an existing configuration of a node that is currently active and has already been adopted by downloading its folder through a raspberries web  ulnoiot interface.
 
-## 2.6
-for some reason expota doesnt work (might be because of the registry -> enable registry and see if it fixes the problem)
+Afterwards use the mounted **C** of windows in the shells **mnt/** folder to move the downloaded folder from Windows into your user- or workspace directory.
 
+When this is done you have to manipulate the config file by updating the wifi ssid and credential preferences.
+
+## 2.6 Install Espotapy
+The last setup step is to install espotapy which can at the moment not be handeled by the system itself. For this you may utilize the following commands:
+
+1.
 ```
 mkdir -p /home/ada/.platformio/packages/tool-espotapy/
 ```
 
+2.
 ```
 cd /home/ada/.platformio/packages/tool-espotapy/
 ```
 
+3.
 ```
 wget https://raw.githubusercontent.com/esp8266/Arduino/master/tools/espota.py
 ```
@@ -121,11 +128,17 @@ ping node2.local
 
 You can check if the adress is reachable from windows using the ping command with the discovered IP adress.
 
-## 2.8 Deploy
-cd into node directory. "deploy" command with previously discovered address.
+## 3 - Deployment
+For the deployment itself just navigate into the target node directory and execute the deploy command with the previously discovered address. Here is an example of what this command might look like:
 
 ```
 deploy node1
+```
+
+or
+
+```
+deploy 192.168.0.27
 ```
 
 
