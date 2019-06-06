@@ -9,11 +9,13 @@ We watched an Intelligence² debate to get a feeling for how the moderator shall
 
 ## Round 1
 In round 1 every debater present his/her starting points
+
 - take turns with pro and con persons
 - after a pro person, a con person should hold his/her starting speech and vice versa
 
 ## Round 2 - Rebuttal
 After round 1 the topic is stated once again. Process of round 2:
+
 - moderator presents topics of each group - "group ... raised the question that..." etc.
 - debaters address each other directly and take questions from audience and moderator
 - maybe if nobody is starting - choose one person to introduce topic (discussion might be started with this)
