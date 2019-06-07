@@ -127,7 +127,7 @@ Getting started with the Raspberry Pi was kind of messy for me. Lorenz helped me
 
 Generally, I think we all tried our best in this project today. I also think that Alex and I got a good feeling for how to work with Node Red and the Raspberry Pi (even though a lot of things didn't work as expected). Working together with my team worked very well though I think that the task was actually quite a good starter project if the things would have worked. 
 
-I would appreciate it, if some of the important information would be shown a little slower and more in detail. For example when showing the adoption demo, there was always talk about pressing a "button" on D3. Maybe I missed this information but I did, at that point, not get, that pressing a button means grounding the pin - as I didn't have anything to do with microcontrollers I didn't know this before and therefore then just assumed that the reset button is meant.
+I would appreciate it, if some of the important information would be shown a little slower and more in detail. For example when showing the adoption demo, there was always talk about pressing a "button" on D3. A short explanation how a button could be connected to the Wemos would have been nice, as I never worked with anything like this before. My team mates were able to help me out here.
 
 
 

@@ -1,4 +1,6 @@
 # Main topics of teams
+Should everyone automate their home! True or False?
+
 ## CON 1 Team
 1. a lot of systems can not be integrated easily
 2. Reliability, Availability and Support is not good enough yet
@@ -22,7 +24,8 @@
 3. Security
     - if you can't rely on end to end encryption, you can't rely on anything in the internet
 4. Convenience & Comfort
-    - 
 5. Save money and resources
+    - remotely powering off systems&applications
 6. Companies/Products don't scale yet
 7. Missing request by users
+8. Cloud
