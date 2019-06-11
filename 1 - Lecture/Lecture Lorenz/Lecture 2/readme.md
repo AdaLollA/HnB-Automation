@@ -5,3 +5,5 @@ This lecture was mostly about learning the basics of IoT, NodeRed and IoTEmpire 
 While the others had the focus on the concrete implementation of the basic exercises i sat together with the professor and  talked about the feasibility of using IoTEmpire natively on Windows 10 via a Linux Shell.
 
 All in all i found this to be a very interesting lecture. The newcomers surely did learn a lot and i could thoroughly utilize my prior knowledge to starting the port of IoTEmpire.
+
+Also michael joined our team this lecture.

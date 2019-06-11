@@ -15,6 +15,7 @@
 - Setting up a Smart Lock with two buttons, controllable via Phone
 
 ## [Lecture 3](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203)
+- [Debate (I was Debate-Administrator, Iris Moderator)](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Lorenz/Lecture%203/readme.md)
 - [Exercise: RFID Lock - General / NodeRed](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
 - [Exercise: RFID Lock - Push Notification and Architecture](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
 - [Research: Lonworks & BACnet](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)

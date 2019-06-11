@@ -1,5 +1,17 @@
 # Please refer to the [global lecture readme file](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Lorenz) to find the desired resources.
 
+# Debate
+We also had the debate where i was the Debate-Administrator, while Iris was the Moderator. The entire team (except Michael) worked hard and spent multiple hours the day before on
+
+ - researching and defining a mode
+ - creating a timetable
+ - organizing the the communications channel (discord)
+ - assigning / managing the teams
+ - gathering the teams structures, speakers and their arguments
+ - filming a [20 minute debate demo](https://www.youtube.com/watch?v=iGxVoLWiEhA&feature=youtu.be) where Manuel (con1), Alex (con2) and i (pro) represented the debaters and Iris trained her moderating
+
+The results (questions, participants, statistics, etc.) can be found at [this link](https://www.loom.com/share/5df041b1f0044c17a3e1355317fa7672).
+
 # Smart Lock Progress
 This lecture we invested some more time into finalizing the smart lock project.
 
