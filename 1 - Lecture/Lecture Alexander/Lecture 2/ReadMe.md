@@ -1,7 +1,7 @@
 # Lecture 2
-## Alexander Stelzhammer, S1810455024
+## S1810455024, Alexander Stelzhammer
 
-# Continue work from Lecture 1
+### Exercise: Let’s Switch on a Light
 Turns out that the Pi was using an updated version that is not compatible with the image from the previous lecture. Ulno uploaded a new image and/or provided commands to upgrade 
 - Downloaded the new image
 - Flashed the Pi using the new image
@@ -36,7 +36,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
     - The yellow cable has been connected to S (= signal).
     - The red cable has been connected to V (= 5 V).
 
-# Upgrading the Pi
+### Upgrading the Pi
 - Pi needs to be connected to the internet
 - Open Full User Interface
   - Command "iot upgrade"

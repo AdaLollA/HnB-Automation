@@ -1,5 +1,5 @@
 # Lecture 3
-## Alexander Stelzhammer, S1810455024
+## S1810455024, Alexander Stelzhammer
 
 ### Research: ModBus
 #### [Functionality](https://www.schneider-electric.com/en/faqs/FA168406/)
@@ -69,3 +69,8 @@
 - a system that measures temperature and humidity communicates the results to a computer
 - send status alarm 
 - fan schedule
+
+
+### Exercise: RFID Lock
+
+We divided the tasks for the RFID lock to work in parallel. 

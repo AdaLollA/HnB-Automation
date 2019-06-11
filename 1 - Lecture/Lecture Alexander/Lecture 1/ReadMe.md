@@ -1,10 +1,36 @@
 # Lecture 1
 ## S1810455024, Alexander Stelzhammer
 
-# Hello World of IoT and H&B Automation - Day 1
+### Self Presentation
+#### Name
+Alexander Stelzhammer
 
-## Movie Takeaways
-### Applications
+#### Age
+24
+
+#### Occupation
+- former MBI student
+- switched to MC because of 
+    * wanting to stay in the field of Software Development
+    * the freedom it gives you to choose your own courses
+        -> can pick the courses that fit my former degree (machine learning, AI, mobile health/sports, cross platform)
+
+#### Expectations from HaBA
+I expect to learn how to improve living using IoT and hope to get knowledge how to enable people with disabilities to live a more carefree life, at least when they are at home.
+
+#### Strengths
+- knowledge of medicine- and bioinformatics as well as anatomy and physiology
+- stress resistent
+- knowledge of Scrum and Agile Development, some experience as a project leader
+
+#### Weaknesses
+* spend too much time on details
+* can get a little heated in discussions
+* busy 24/7
+
+### Hello World of IoT and H&B Automation - Day 1
+#### Movie Takeaways
+##### Applications
 - turn on light via a click
 - play stereo via a click
     - lower the volume via laptop
@@ -18,7 +44,7 @@
 - feed your pets via alarm
 - dynamic route management
 
-### Domains
+##### Domains
 - Safety & Security
     -> dynamic root management
     -> lighting installations for security, acoustic signals and voice prompts
@@ -30,13 +56,13 @@
 - Comfort & Health
 
 
-### Other
+##### Other
 - modularity is key
     -> adapting to users' needs
 
 
-# Hello World of IoT and H&B Automation - Day 2
-## Continue work from Day 1
+### Hello World of IoT and H&B Automation - Day 2
+#### Continue work from Day 1
 Turns out that the Pi was using an updated version that is not compatible with the image from the previous lecture. Ulno uploaded a new image and/or provided commands to upgrade 
 - Downloaded the new image
 - Flashed the Pi using the new image
@@ -71,7 +97,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
     - The yellow cable has been connected to S (= signal).
     - The red cable has been connected to V (= 5 V).
 
-## Upgrading the Pi
+#### Upgrading the Pi
 - Pi needs to be connected to the internet
 - Open Full User Interface
   - Command "iot upgrade"
