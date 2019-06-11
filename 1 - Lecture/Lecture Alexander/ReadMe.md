@@ -6,6 +6,8 @@
 
 ## [Lecture 2](./Lecture%202/ReadMe.md)
 - [Exercise: Let’s Switch on a Light](./Lecture%202/ReadMe.md#Exercise:%20Let's%20switch%20on%20a%20light)
+- [Challenge: RGB LED](./Lecture%202/Challenges/RGB%20LED/ReadMe.md)
+- [Challenge: Analog Light Sensor](./Lecutre%202/Challenges/Analog%20Light%20Sensor/ReadMe.md)
 - [Upgrading the Pi](./Lecture%202/ReadMe.md#Upgrading%20the%20Pi)
 
 ## [Lecture 3](./Lecture%203/ReadMe.md)
