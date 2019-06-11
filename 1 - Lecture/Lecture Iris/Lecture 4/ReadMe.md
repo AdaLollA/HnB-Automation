@@ -1,5 +1,16 @@
 # Lecure 4
 ## Protocols presentations
+### Research to questions asked during presentation
+**Serial vs. TCP/IP**
+Two main types of Modbus:
+- Modbus RTU = serial protocol
+- Modbux TCP = working with TCP/IP
+
+**Discovery**
+[Not really a way to detect nodes](https://control.com/thread/1306158603#1306158603)
+- very small resources needed to create nodes
+- work has to be done manually (typing in codes, ...)
+
 ### SPI (Serial Peripherial Interface)
 - full-duplex synchronous data bus
 - clock, data and select lines
@@ -154,3 +165,31 @@ Does only Amazon Echo Plus support Zigbee or Amazon Echo and Echo Dot too (speci
 - digital communication, RS-485 for physical layer
 - shielded twisted pair
 - asynchronous serial data
+
+### KNX
+- separate power supply and device control into two separate networks
+- devices made by different manufacturers
+- devices just plugged in (= actors)
+- sends plain text data
+
+### Ebus
+- control heating & solar components
+- European standard, mostly developed and used by German companies
+- can provide power to participants
+- 2 wires, twisted pair
+- fixed data rate: 2400 baud -> very slow!
+- start and stop bits
+- old documentation, not easy to find
+
+### CAN Bus
+- mainly used in car industry
+- also used in automotive industry
+- pupose for invention: reduce wiring cost
+- CAN Bus Low: very cheap, not so secure, slower
+- CAN Bus High: more expensive, securer, faster
+- supports different bus structures, but normally normal bus used
+- dominant and recessive state, have also priority
+    - if two nodes send at same time - highest priority wins
+    - higher priority overrides state
+    - avoid collisions
+

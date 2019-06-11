@@ -89,3 +89,34 @@ I was moderator in the debate. The things I still remember that the debaters tal
 - fan schedule
 
 ## RFID Project
+In the RFID Project we split the work to get it done. The first steps to do were:
+1. update the Raspberry Pi with the new image
+    - this didn't work with the command over the user menu, because the command was wrong
+    - did it over command line then ("iot upgrade")
+    - I also started a Pull Request onto the library to fix the issue
+2. adopt the Nodes again (somehow they were not recognized again on this day)
+3. write the [ticket simulator](../../MQTT%20Ticket%20Simulator) in Java
+    - simulates expiring tickets
+    - holds references to the RFID cards and the phones belonging to the RFID cards
+    - verifies that which person sent which token
+4. setup the hardware
+    - the RFID reader is connected to a Wemos node (node1)
+    - Lock is connected to a relais which is connected to a Wemos node (node2)
+    ![hardware-setup](RFID-hardware-setup.jpeg)
+5. setup the software
+    - setup commands in the setup.cpp files of the two nodes
+        - node1: mfrc522(rfid, 32);
+        - node2: relais(lock, D3, "on", "off");
+    - When the RFID reader reads an RFID chip, a MQTT-message is sent to the Raspberry Pi
+    - MQTT triggers a request to the ticket simulator which sends an authentication code
+    - the code is received as a push notification on the phone, this was realised with IFTTT
+        - the rfid cards are mapped to users in the authentication server
+        - a click on the notification forwads to the nodeRed UI
+        - the code has to be entered there and confirmed, this validates the user
+    - after validating the user, the lock gets opened
+    - the detailed setup in the NodeRed interface can be seen in the following picture
+
+## Opinion/Thoughts
+The research on the protocols was quite challenging for me, as I have not had a lot of contact with busses etc. before. I tried to filter out information as good as possible though. I also don't really know if the presentations in the next lecture will be that much of use for me, as I don't know if I can remember any of that many different protocols. When researching I split the work on Modbus with Alex, as we are the ones that have the least knowledge about the topic area. Michael researched on Bacnet and Manuel researched on Lonworks. During that time, Lorenz was working on getting iotempower to run on Windows.
+
+In the RFID Project we split the work a lot, also we actually did the last part in the 4th lecture, but as most parts were done in the 3rd lecture, the notes are found here. Manuel did the work on the ticket simulator. Michael and I set up the hardware (updated Raspberry, adopt nodes, connect RFID reader, connect lock, setup setup.cpp files). Lorenz and I worked on the push notifications with IFTTT. Lorenz did most of the work here, though. The main reason for that was also that Lorenz has done this before and showed me how to do it. Alex worked in the NodeRed interface to set up everything here.
