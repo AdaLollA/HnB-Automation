@@ -88,17 +88,6 @@ I was moderator in the debate. The things I still remember that the debaters tal
 - send status alarm 
 - fan schedule
 
-#### Research to questions asked during presentation
-**Serial vs. TCP/IP**
-Two main types of Modbus:
-- Modbus RTU = serial protocol
-- Modbux TCP = working with TCP/IP
-
-**Discovery**
-[Not really a way to detect nodes](https://control.com/thread/1306158603#1306158603)
-- very small resources needed to create nodes
-- work has to be done manually (typing in codes, ...)
-
 ## RFID Project
 In the RFID Project we split the work to get it done. The first steps to do were:
 1. update the Raspberry Pi with the new image
@@ -111,8 +100,23 @@ In the RFID Project we split the work to get it done. The first steps to do were
     - holds references to the RFID cards and the phones belonging to the RFID cards
     - verifies that which person sent which token
 4. setup the hardware
-    - Smart Lock is connected to the RFID Reader
-    - Lock is connected to a Raspberry Pi
+    - the RFID reader is connected to a Wemos node (node1)
+    - Lock is connected to a relais which is connected to a Wemos node (node2)
+    ![hardware-setup](RFID-hardware-setup.jpeg)
+5. setup the software
+    - setup commands in the setup.cpp files of the two nodes
+        - node1: mfrc522(rfid, 32);
+        - node2: relais(lock, D3, "on", "off");
     - When the RFID reader reads an RFID chip, a MQTT-message is sent to the Raspberry Pi
-    - MQTT triggers a request to the ticket simulator which sends the authentication via a MQTT message
+    - MQTT triggers a request to the ticket simulator which sends an authentication code
+    - the code is received as a push notification on the phone, this was realised with IFTTT
+        - the rfid cards are mapped to users in the authentication server
+        - a click on the notification forwads to the nodeRed UI
+        - the code has to be entered there and confirmed, this validates the user
+    - after validating the user, the lock gets opened
+    - the detailed setup in the NodeRed interface can be seen in the following picture
 
+## Opinion/Thoughts
+The research on the protocols was quite challenging for me, as I have not had a lot of contact with busses etc. before. I tried to filter out information as good as possible though. I also don't really know if the presentations in the next lecture will be that much of use for me, as I don't know if I can remember any of that many different protocols. When researching I split the work on Modbus with Alex, as we are the ones that have the least knowledge about the topic area. Michael researched on Bacnet and Manuel researched on Lonworks. During that time, Lorenz was working on getting iotempower to run on Windows.
+
+In the RFID Project we split the work a lot, also we actually did the last part in the 4th lecture, but as most parts were done in the 3rd lecture, the notes are found here. Manuel did the work on the ticket simulator. Michael and I set up the hardware (updated Raspberry, adopt nodes, connect RFID reader, connect lock, setup setup.cpp files). Lorenz and I worked on the push notifications with IFTTT. Lorenz did most of the work here, though. The main reason for that was also that Lorenz has done this before and showed me how to do it. Alex worked in the NodeRed interface to set up everything here.
