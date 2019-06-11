@@ -72,5 +72,21 @@
 
 
 ### Exercise: RFID Lock
+We divided the tasks for the RFID lock to work in parallel:
+- Manuel was tasked with creating an authentication server in Java.
+- Michael and Iris built the RFID lock using the hardware.
+- Lorenz and I used Node-RED to forward all messages to their respective destination.
 
-We divided the tasks for the RFID lock to work in parallel. 
+**The basic setup is the following:**
+Every person that is allowed to unlock the RFID lock possesses their own RFID chip. Once the RFID chip is presented to the RFID scanner, an authentication code is sent to the user's mobile phone. Using this authentication code the user can authorize access and unlock the lock.
+
+**How this works:**
+- The RFID lock is connected to a Raspberry Pi. Once the RFID chip is presented to the scanner, a MQTT-message is sent to the Pi.
+- The MQTT triggers a request at the authentication server which in turn sends the authentication via a MQTT message.
+- This MQTT-message triggers a HTTP-request that is sent to a server triggering a push notification at the user's mobile phone displaying the authentication code.
+- Once the authentication code is entered, it triggers a MQTT-message containing the authentication code that has been entered by the user. This message is forwarded to the authentication server to check whether the entered code is correct.
+- If the correct code has been entered, another MQTT-message is sent to the Pi (by the authentication server)  which then sends an MQTT message to the RFID lock to unlock it.
+
+The Node-RED setup is displayed here: ![node_red_setup]
+
+[node_red_setup]: ./RFID_Configuration.PNG "RFID Configuration in Node-RED"
