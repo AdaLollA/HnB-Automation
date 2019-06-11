@@ -26,7 +26,7 @@ I was moderator in the debate. The things I still remember that the debaters tal
 - transmit information over serial lines between electronic devices
 - device requesting information: Modbus Master
 - devices supplying information: Modbus Slaves
-- Simples setup:
+- Simplest setup:
     - single serial cable
     - connecting serial ports on two devices: Master and Slave
     - data is sent as series of bits
@@ -47,13 +47,13 @@ I was moderator in the debate. The things I still remember that the debaters tal
 
 #### [Speed](http://www.modbus.org/faq.php)
 - if running Modbus TCP/IP over Internet - no better than typical internet response times
-- with high-performance intranet with high-speed Ethernet switches guaranteeing performance - in theory up to 60% efficiency when transferring registers in buld
+- with high-performance intranet with high-speed Ethernet switches guaranteeing performance - in theory up to 60% efficiency when transferring registers in bulk
 - [typical transmission speed](https://www.schneider-electric.com/en/faqs/FA168406/): 9600 baud (bits per second)
 - generally rather slow
 
 #### [Throughput](http://www.modbus.org/faq.php)
 - 10BaseT Ethernet carries about 1.25 Mbps raw
-- Theorectical throughput is: 1.25/2 * 60% = 360.000 registers per second
+- Theorectical throughput is: 1.25/2 * 60% = 360.000 registers per second when transferring registers in bulk
 - 100BaseT speed is 10 times greater
 
 #### [Latency](https://en.wikipedia.org/wiki/Modbus)
