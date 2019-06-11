@@ -1,3 +1,5 @@
+# Personal Opinions / Feedback / Work Distribution can be found in the corresponding lecture folders (readme's)
+
 # Lecture Overview
 ## [Lecture 1](./Lecture%201)
 - [Self Presentation](https://github.com/AdaLollA/HnB-Automation/blob/develop/0%20-%20Introduction/whois/who%20is%20Lorenz.md)
@@ -13,7 +15,8 @@
 - Setting up a Smart Lock with two buttons, controllable via Phone
 
 ## [Lecture 3](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203)
-- [Exercise: RFID Lock](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
+- [Exercise: RFID Lock - General / NodeRed](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
+- [Exercise: RFID Lock - Push Notification and Architecture](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
 - [Research: Lonworks & BACnet](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)
 - [Lonworks Impl. Research](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Manuel/Lecture%202/lonworks.md)
 
@@ -21,3 +24,8 @@
 - [Bus Research Presentation](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)
 - [Notes](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Iris/Lecture%204/ReadMe.md)
 
+## Personal Extra Work
+ - [IoTEmpire on Windows 10](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Lorenz/Extra%20-%20ulnoiot%20on%20native%20windows/readme.md)
+ - [IoTEmpire Documentation Update](https://github.com/iotempire/iotempower/pull/2)
+ - [TODO Smart Lock integration over push notifications + Auth Key]()
+ - [TODO Smart Lock integration over push notifications + HTTP Call]()

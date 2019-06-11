@@ -21,5 +21,15 @@ We used IFTTT for push integration with the following configuration that is trig
 
 ![ifttt config](ifttt.png)
 
+## HTTP Call Confirmation
+Since we do not necessarily have to use the code which brings a few usability losses (have to remember code, have to enter code into box, press confirm) we afterwards transitioned to the usage of a clean HTTP GET request. For this the java authentication management server was altered to no longer use auth-codes, and the IFTTT push notification is modified to directly call the necessary (newly added) NodeRed HTTP-GET call.
+
+The new users flow is now way simpler:
+
+1. Hold card onto sensor
+2. Press Push Notification
+
 # Personal Opinion
 The project is very interesting and a great way to learn about multiple devices as well as infrastructure elements. My personal contribution was architectural and conceptual design as well as the push notification implementation together with Iris. Other participation was performed through assistance in nodered system design.
+
+The push notificatiosn were not necessarily required by the execerise assignment, so it might be evaluated as extra work. Also the usability optimization through removing the authentication code and integrating HTTP-call confirmation was not assigned and performed out of own motivation.
