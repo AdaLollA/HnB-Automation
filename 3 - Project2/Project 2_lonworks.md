@@ -117,4 +117,12 @@ Bacnet, Lonworks, Modbus:
 	- installing a node
 	- specify which cable connected
 	- SVNT must be the same (standard)
-	
+
+### Implementation on ESP8266 based Wemos D1 Mini
+The core of the concept are the three 8 bit processors that are refered to as the Neuron Chip. They are responsible for the following utilities:
+
+ - Media Access
+ - Network
+ - Application
+
+Since we are working on a single 32 bit processor on the Wemos D1 Mini we are not capable of implementing this concept without additional hardware. If we really wanted to we could aquire these resources from the [echelon store](https://www.echelon.com/products/category/chips). The required chip is called **Neuron XXXX Processor**.
