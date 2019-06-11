@@ -7,7 +7,7 @@ import java.util.Random;
 public class AuthCode {
     private Date validUntil;
     private String value;
-    private String rfID;
+    private String phoneID;
     private static Random rand = new Random();
 
     public AuthCode() {
@@ -16,12 +16,12 @@ public class AuthCode {
         this.value = AuthCode.generate();
     }
 
-    public AuthCode(String phoneID) {
+    public AuthCode(String rfID) {
         this();
-        if (phoneID == PhoneID.PHONE_1) { // lorenz
-            this.rfID = RFID.PHONE_1;
-        } else if (phoneID == PhoneID.PHONE_2) { // iris
-            this.rfID = RFID.PHONE_2;
+        if (rfID == RFID.PHONE_1) { // lorenz
+            this.phoneID = PhoneID.PHONE_1;
+        } else if (rfID == RFID.PHONE_2) { // iris
+            this.phoneID = PhoneID.PHONE_2;
         }
     }
 
@@ -32,20 +32,24 @@ public class AuthCode {
     }
 
     public byte[] getValue() {
-        return value.getBytes();
+        return this.value.getBytes();
+    }
+
+    public boolean isSame(String code) {
+        return this.value.equals(code);
     }
 
     public boolean stillValid() {
         return this.validUntil.after(new Date());
     }
 
-    public byte[] createResponse(String phoneID) {
+    public byte[] createResponse() {
         String response;
         if (this.stillValid()) {
-            response = "pressed";
+            response = "off";
         } else {
-            response = "depressed";
+            response = "on";
         }
-        return (phoneID + ";" + response).getBytes();
+        return (response).getBytes();
     }
 }
