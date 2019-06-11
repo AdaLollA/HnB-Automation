@@ -88,6 +88,17 @@ I was moderator in the debate. The things I still remember that the debaters tal
 - send status alarm 
 - fan schedule
 
+#### Research to questions asked during presentation
+**Serial vs. TCP/IP**
+Two main types of Modbus:
+- Modbus RTU = serial protocol
+- Modbux TCP = working with TCP/IP
+
+**Discovery**
+[Not really a way to detect nodes](https://control.com/thread/1306158603#1306158603)
+- very small resources needed to create nodes
+- work has to be done manually (typing in codes, ...)
+
 ## RFID Project
 In the RFID Project we split the work to get it done. The first steps to do were:
 1. update the Raspberry Pi with the new image
