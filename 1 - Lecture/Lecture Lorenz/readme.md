@@ -11,3 +11,12 @@
 - Lighting a RGB LED connected to a WEMOS, controllable with a colourpicker trough the NodeRed UI
 - Sensing light with an analog light sensor and displaying gauge and chart
 - Setting up a Smart Lock with two buttons, controllable via Phone
+
+## [Lecture 3](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203)
+- [Exercise: RFID Lock](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
+- [Research: Lonworks & BACnet](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)
+
+## [Lecture 4](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Iris/Lecture%204)
+- [Bus Research Presentation](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)
+- [Notes](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Iris/Lecture%204/ReadMe.md)
+
