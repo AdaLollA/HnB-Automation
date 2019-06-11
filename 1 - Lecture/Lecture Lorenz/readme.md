@@ -27,5 +27,5 @@
 ## Personal Extra Work
  - [IoTEmpire on Windows 10](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Lorenz/Extra%20-%20ulnoiot%20on%20native%20windows/readme.md)
  - [IoTEmpire Documentation Update](https://github.com/iotempire/iotempower/pull/2)
- - [TODO Smart Lock integration over push notifications + Auth Key]()
- - [TODO Smart Lock integration over push notifications + HTTP Call]()
+ - [Smart Lock integration over push notifications + Auth Key](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Lorenz/Lecture%203/readme.md)
+ - [Smart Lock integration over push notifications + HTTP Call](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Lorenz/Lecture%203/readme.md)
