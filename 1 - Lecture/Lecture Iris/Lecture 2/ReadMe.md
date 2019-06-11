@@ -110,3 +110,8 @@ Setup of a lock that can be locked/unlocked via buttons on two different Wemos o
         - both are connected ro the rpe
 
 ![Flow Smart Lock](./images/flow_lock.PNG)
+
+## Thoughts/Opinion
+It was actually quite nice to finally see some things working. Seeing some results also made the lecture a lot more fun. I still had the feeling of being stressed all the time, but the results were nice anyways.
+
+When it got to the smart lock the hardware setup was kind of difficult to understand again for me, but my team mates were really helpful as they tried their best explaining it to me and getting me on their level of knowledge. After this lecture I really got the feeling that I understood a lot more, also about what we were trying to the day before. I was also able to get familiar with RedNode.

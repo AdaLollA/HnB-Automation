@@ -9,10 +9,6 @@
 - i expect to learn how to improve living using IoT and hope to get knowledge how to enable people with disabilities
   to live a more carefree life, at least when they're at home.
 
-
-
-
-
 - strengths: 
     * knowledge of medicine- and bioinformatics as well as anatomy and physiology
     * stress resistent
