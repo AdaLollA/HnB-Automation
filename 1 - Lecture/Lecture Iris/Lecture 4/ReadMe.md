@@ -193,3 +193,6 @@ Does only Amazon Echo Plus support Zigbee or Amazon Echo and Echo Dot too (speci
     - higher priority overrides state
     - avoid collisions
 
+## KNX Certificate
+did the KNX certificate, can be found in the Lecture 4 folder
+
