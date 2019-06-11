@@ -89,3 +89,19 @@ I was moderator in the debate. The things I still remember that the debaters tal
 - fan schedule
 
 ## RFID Project
+In the RFID Project we split the work to get it done. The first steps to do were:
+1. update the Raspberry Pi with the new image
+    - this didn't work with the command over the user menu, because the command was wrong
+    - did it over command line then ("iot upgrade")
+    - I also started a Pull Request onto the library to fix the issue
+2. adopt the Nodes again (somehow they were not recognized again on this day)
+3. write the [ticket simulator](../../MQTT%20Ticket%20Simulator) in Java
+    - simulates expiring tickets
+    - holds references to the RFID cards and the phones belonging to the RFID cards
+    - verifies that which person sent which token
+4. setup the hardware
+    - Smart Lock is connected to the RFID Reader
+    - Lock is connected to a Raspberry Pi
+    - When the RFID reader reads an RFID chip, a MQTT-message is sent to the Raspberry Pi
+    - MQTT triggers a request to the ticket simulator which sends the authentication via a MQTT message
+
