@@ -113,7 +113,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
     - sudo  npm install -g --unsafe-perm cloudcmd
   - Edit "bin/cloudcmd"
     - Replace content with:
-        ```
+        ```bash
         #!/bin/bash
 
         ## local
@@ -126,7 +126,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
 
   - Edit ".cloudcmd.menu.js"
     - Replace content with 
-        ```
+        ```javascript
         module.exports = {
             'D - Deploy': async ({CloudCmd}) => {
                 await CloudCmd.TerminalRun.show({

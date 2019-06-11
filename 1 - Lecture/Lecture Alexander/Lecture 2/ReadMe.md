@@ -36,7 +36,8 @@ Turns out that the Pi was using an updated version that is not compatible with t
     - The yellow cable has been connected to S (= signal).
     - The red cable has been connected to V (= 5 V).
 
-### Upgrading the Pi
+
+#### Upgrading the Pi
 - Pi needs to be connected to the internet
 - Open Full User Interface
   - Command "iot upgrade"
@@ -52,7 +53,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
     - sudo  npm install -g --unsafe-perm cloudcmd
   - Edit "bin/cloudcmd"
     - Replace content with:
-        ```
+        ```bash
         #!/bin/bash
 
         ## local
@@ -65,7 +66,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
 
   - Edit ".cloudcmd.menu.js"
     - Replace content with 
-        ```
+        ```javascript
         module.exports = {
             'D - Deploy': async ({CloudCmd}) => {
                 await CloudCmd.TerminalRun.show({
@@ -113,3 +114,8 @@ Turns out that the Pi was using an updated version that is not compatible with t
         ```
 
 
+### Challenge: RGB LED
+[Can be found here](./Challenges/RGB%20LED/ReadMe.md)
+
+### Challenge: Analog Light Sensor
+[Can be found here](./Challenges/Analog%20Light%20Sensor/ReadMe.md)
