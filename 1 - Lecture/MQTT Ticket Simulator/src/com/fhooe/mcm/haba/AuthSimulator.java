@@ -70,7 +70,7 @@ public class AuthSimulator implements MqttCallback {
         if (topic == Topic.RFID_RECOGNIZED
         && this.codes.containsKey(phoneID)) {
 
-            AuthCode code = new AuthCode();
+            AuthCode code = new AuthCode(phoneID);
             this.codes.put(phoneID, code);
             MqttMessage message = new MqttMessage(code.getValue());
             this.sender.publish(Topic.TWO_FACTOR_CODE, message);
