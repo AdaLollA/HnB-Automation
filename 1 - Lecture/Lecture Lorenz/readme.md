@@ -15,6 +15,7 @@
 ## [Lecture 3](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203)
 - [Exercise: RFID Lock](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Alexander/Lecture%203/ReadMe.md)
 - [Research: Lonworks & BACnet](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)
+- [Lonworks Impl. Research](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Manuel/Lecture%202/lonworks.md)
 
 ## [Lecture 4](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/Lecture%20Iris/Lecture%204)
 - [Bus Research Presentation](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Bus%20%26%20Protocol%20Research.pdf)
