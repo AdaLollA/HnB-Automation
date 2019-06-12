@@ -45,3 +45,5 @@ The new users flow is now way simpler:
 The project is very interesting and a great way to learn about multiple devices as well as infrastructure elements. My personal contribution was architectural and conceptual design as well as the push notification implementation together with Iris. Other participation was performed through assistance in nodered system design.
 
 The push notificatiosn were not necessarily required by the execerise assignment, so it might be evaluated as extra work. Also the usability optimization through removing the authentication code and integrating HTTP-call confirmation was not assigned and performed out of own motivation.
+
+What was really frustrating was that Michael was not communicating with us neither through phone, discord or telegram. Not even when directly contacted through said channels. He was not present at the team meeting and did not contribute to project 1.

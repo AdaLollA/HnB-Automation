@@ -1,3 +1,6 @@
+# Lecture 3
+## S1810455012, Manuel Leibetseder
+
 # Debate
 
 ## General
@@ -170,3 +173,22 @@ ulno said con team had more facts than pro team. pro team defended well
 
 cyber bullying is getting very serious with HABA
 
+***
+***
+
+# Smart Lock Implementation
+
+We are using the hardware setup from the lecture before. Extending this with a card-reader hardware and extend NodeRED to integrate a temp-MQTT store implemented with Java.
+
+We were able to implement a two-factor-authentication-flow using NodeRED on mobile to input the code we send with MQTT back to NodeRED and notify the user of the smart lock to input the code.
+
+## Hardware Setup
+- Raspberry Pi
+- Wemos
+- RFID-Sensor
+- Lock
+
+## NodeRED
+## MQTT-Store
+## Telegram Integration
+## IFTTT
