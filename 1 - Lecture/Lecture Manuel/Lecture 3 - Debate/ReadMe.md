@@ -192,3 +192,13 @@ We were able to implement a two-factor-authentication-flow using NodeRED on mobi
 ## MQTT-Store
 ## Telegram Integration
 ## IFTTT
+
+***
+***
+
+### Personal Opinion // Lesson Learnt
+
+I found it quite interesting to research about the history of older IoT and automation technology, but in my opinion the presentations were a bit too long. 15 minutes/presentation should have been enough to catch up with the hard facts.
+
+Devloping a smart lock with restricting access to specific devices/persons was really interesting. My part on this was the MQTT Store Simulator
+
