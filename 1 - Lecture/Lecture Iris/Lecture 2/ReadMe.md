@@ -17,8 +17,10 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
 
 ### Final Software Setup
 1. set following in setup.cpp of node1 and node2: 
-	- output(blue, ONBOARDLED, "off", "on").set("off");
-	- input(b1, D3, "depressed", "pressed");
+    ```
+    output(blue, ONBOARDLED, "off", "on").set("off");
+	input(b1, D3, "depressed", "pressed");
+    ```
 2. In the NodeRed interface make the following changes:
     - set the output mqtt node to: node2/blue/set
 
@@ -33,7 +35,10 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
 2. the order of the D pins that R, G and B are connected to is important for the Software Setup later
 
 ### Software Setup
-- set following in setup.cpp of node: rgb_single(rgb1, D3, D2, D1, true);
+- set following in setup.cpp of node:
+    ```
+    rgb_single(rgb1, D3, D2, D1, true);
+    ```
 - we had at first the error that we didn't set the "true" that inverts the values, so we got wrong colours at the beginning
 - rgb1 is the way we named our RGB-LED
 - The pins that are entered in this command have to be in the same order as they are connected to the node (from the RGB light)
@@ -69,7 +74,10 @@ Flashing the nodes via cable is difficult - doesn't work 70% of the time. Ulli f
 ![Light Sensor](./images/light_sensor.jpeg)
 
 ### Software Setup
-1. set following in setup.cpp of node: analog(light).with_precision(10);
+1. set following in setup.cpp of node: 
+    ```
+    analog(light).with_precision(10);
+    ```
     - light is the name of the input source - has to be used in NodeRed later
     - with_precision(10) means that only changes that are bigger than 10 units will be forwarded
     - with_precision can also get left out, then every change is propagated
@@ -97,10 +105,14 @@ Setup of a lock that can be locked/unlocked via buttons on two different Wemos o
 
 ### Software Setup
 1. set following setup.cpp of Node1 (only having one button attached):
-    - input(button, D1, "depressed", "pressed");
+    ```
+    input(button, D1, "depressed", "pressed");
+    ```
 2. set following setup.cpp of Node2 (having the breadboard with button + lock connected)
-    - input(button, D2, "depressed", "pressed"); 
-    - relais(lock, D1, "on", "off");
+    ```
+    input(button, D2, "depressed", "pressed"); 
+    relais(lock, D1, "on", "off");
+    ```
 3. In Node Red, we used basically the same setup as when lighting the single LED (first task)
     - Mqtt input connected to rpe, connected to a function (same as in first task), connected to a switch, connected to the mqtt lock
     - the mqtt lock is a mqtt output where "node2/lock/set" is set as a topic

@@ -1,5 +1,16 @@
 # Lecure 4
 ## Protocols presentations
+### Research to questions asked during presentation
+**Serial vs. TCP/IP**
+Two main types of Modbus:
+- Modbus RTU = serial protocol
+- Modbux TCP = working with TCP/IP
+
+**Discovery**
+[Not really a way to detect nodes](https://control.com/thread/1306158603#1306158603)
+- very small resources needed to create nodes
+- work has to be done manually (typing in codes, ...)
+
 ### SPI (Serial Peripherial Interface)
 - full-duplex synchronous data bus
 - clock, data and select lines
@@ -181,5 +192,7 @@ Does only Amazon Echo Plus support Zigbee or Amazon Echo and Echo Dot too (speci
     - if two nodes send at same time - highest priority wins
     - higher priority overrides state
     - avoid collisions
-- 
+
+## KNX Certificate
+did the KNX certificate, can be found in the Lecture 4 folder
 
