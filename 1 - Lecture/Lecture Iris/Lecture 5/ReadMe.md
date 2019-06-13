@@ -52,19 +52,23 @@ Why did you choose to get all your devices from Loxone? Seems extremely expensiv
     - in inbox: add every Hue found as item
 5. Go to Control
     - Both Hues can be turned off/on and the light changed here
+    ![Philips Hue](./images/openhab_hue_control.PNG)
 
-#### Temperature and humidity sensor
+#### Temperature, humidity and light sensor
 We also tried a temperature and a humidity sensor.
-1. Connect the temperature and the humidity sensor to a Wemos connected to a Raspberry
+1. Connect the temperature, the humidity and the light sensor to a Wemos connected to a Raspberry
 2. In setup.cpp we set the following:
     ```
-    \\ add missing code
+    dht(humidity, D1); 
+    dht(temperature, D2); 
+    analog(photo).with_precision(10);
     ```
 3. In OpenHab we had to set up a MQTT Broker
     1. Install the MQTT Binding in the Add-Ons
     2. Got to Inbox, select MQTT Binding
     3. Select MQTT Broker
     4. Set IP-Adress, username and password
+    ![MQTT Broker](./images/mqtt_broker.PNG)
 4. Set up the MQTT Things
     1. Got to Inbox, select Generic MQTT Thing
     2. The broker is already selected
@@ -75,5 +79,42 @@ We also tried a temperature and a humidity sensor.
         4. Set the MQTT state topic (f.e. "node2/temperature/temperature")
             - the state topic could be empty if the channel should be write-only
             - the command topic can be empty if the channel is read-only
+    ![Add channel](./images/temperature_openhab_2.PNG)
 5. The MQTT Things are then visible in the control panel again
 
+#### Show text on display
+To show a text on the display, we did pretty much the same as when adding the temperature, ... sensors
+- in setup.cpp set the following:
+    ```
+    U8G2_SSD1306_64X48_ER_F_HW_I2C u8g2(U8G2_R0);
+    display(raspi_display, u8g2, u8g2_font_profont29_mf);
+    ```
+- again add a channel to the Generic MQTT Thing
+- in the configuration of the display channel we had to set now the command topic and not the state topic, so that we can set a value
+- in the control panel the value then can be sent
+![Display control panel](./images/raspberry_pi_final.PNG)
+
+
+#### ZWave Device
+1. Add ZWave Binding in Openhab
+2. Go to input
+    - use ZWave Binding to add controller
+    - set port to the port the USB ZWave controller is connected to
+    - the ZWave controller can also be seen in the control
+    ![ZWave controller control](./images/z-wave-1.PNG)
+3. Add another ZWave item via ZWave Binding
+    - Now Nodes are found
+    - Add the Nodes that are shown
+4. At the first tries, we had the following problem:
+![Error](./images/zwave_unknown_problem.PNG)
+    - Somehow the Zwave node wasn't added correctly and it tooks us quite a long time to figure out how to solve this problem
+    - To solve the problem we did the following steps:
+        - the plug has to be in discovery mode (green light pulsing)
+            - press button on plug so often, that green light pulses
+        - In the controller settings:
+            - set security to no security
+            - activate the action "soft reset controller"
+        - Following these things fixed our problem, the node then showed the following description:
+        ![Node description](./images/z_wave_node_recognized.PNG)
+5. The Plug was then visible in the control panel
+    ![Plug in control panel](./images/zwave_node_final.PNG)
