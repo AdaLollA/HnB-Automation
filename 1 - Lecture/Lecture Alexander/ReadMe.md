@@ -17,3 +17,10 @@
 ## [Lecture 4](./Lecture%204/ReadMe.md)
 - [Presentation: BacNET, LonWorks, ModBus](./Lecture%204/ReadMe.md#Presentation:%20BacNET,%20LonWorks,%20ModBus)
 - [Presentations of the other teams](./Lecture%204/ReadMe.md#Presentations%20of%20the%20others%20teams)
+
+
+## [Lecture 5](./Lecture%205/ReadMe.md)
+- [Project 2: Presentations](./Lecture%205/ReadMe.md#Project%202:%20Presentations)
+
+## [Lecutre 6](./Lecture%206/ReadMe.md)
+- [Project 3: Brainstorming](./Lecture%206/ReadMe.md#Project%203:%20Brainstorming)

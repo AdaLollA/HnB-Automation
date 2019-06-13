@@ -10,10 +10,11 @@ public class AuthSimulator implements MqttCallback {
     Map<String, AuthCode> codes = new HashMap<>();
 
     public AuthSimulator() throws MqttException {
-        this.sender = new MqttClient("tcp://192.168.12.1:1883", MqttClient.generateClientId());
+        this.codes.put(RFID.PHONE_1, null);
+        this.codes.put(RFID.PHONE_2, null);
 
-        this.codes.put(PhoneID.PHONE_1, null);
-        this.codes.put(PhoneID.PHONE_2, null);
+        this.sender = new MqttClient("tcp://192.168.12.1:1883", MqttClient.generateClientId());
+        this.sender.connect();
     }
 
     public static void main(String[] args) throws MqttException, InterruptedException {
@@ -42,36 +43,39 @@ public class AuthSimulator implements MqttCallback {
 
     @Override
     public void connectionLost(Throwable throwable) {
+        System.out.println(throwable.fillInStackTrace());
         System.out.println("Connection to MQTT broker lost!");
     }
 
     @Override
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-        String phoneID = new String(mqttMessage.getPayload());
-        System.out.println("Message received: " + phoneID);
+        String payload = new String(mqttMessage.getPayload());
+        System.out.println("Message received: " + payload);
         System.out.println("Topic: " + s);
 
-        this.recognized(s, phoneID);
-        this.codeCheck(s, phoneID);
+        this.recognized(s, payload);
+        this.codeCheck(s, payload);
     }
 
-    private void codeCheck(String topic, String phoneID) throws MqttException {
-        if (topic == Topic.CODE_CHECK
-        && this.codes.containsKey(phoneID)) {
-            MqttMessage message;
-            AuthCode code = this.codes.get(phoneID);
-
-            message = new MqttMessage(code.createResponse(phoneID));
-            this.sender.publish(Topic.CODE_CHECK_RESULT, message);
+    private void codeCheck(String topic, String pin) throws MqttException {
+        if (topic.equals(Topic.CODE_CHECK)) {
+            for (AuthCode code : this.codes.values()) {
+                if (code != null && code.isSame(pin)) {
+                    MqttMessage message;
+                    message = new MqttMessage(code.createResponse());
+                    this.sender.publish(Topic.CODE_CHECK_RESULT, message);
+                    break;
+                }
+            }
         }
     }
 
-    private void recognized(String topic, String phoneID) throws MqttException {
-        if (topic == Topic.RFID_RECOGNIZED
-        && this.codes.containsKey(phoneID)) {
+    private void recognized(String topic, String rfID) throws MqttException {
+        if (topic.equals(Topic.RFID_RECOGNIZED)
+        && this.codes.containsKey(rfID)) {
 
-            AuthCode code = new AuthCode(phoneID);
-            this.codes.put(phoneID, code);
+            AuthCode code = new AuthCode(rfID);
+            this.codes.put(rfID, code);
             MqttMessage message = new MqttMessage(code.getValue());
             this.sender.publish(Topic.TWO_FACTOR_CODE, message);
         }

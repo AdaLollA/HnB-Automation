@@ -10,13 +10,13 @@
 ### Presteps to do
 
 We needed to make the pi work to adopt nodes, by executing the following commands:
-	
-		iot
-		rm -rf /home/iot/.platformio/packages/framework-arduinoespressif8266
-		cd iot-test/node1/ 
- 		compile
- 
-***
+
+```bash	
+iot
+rm -rf /home/iot/.platformio/packages/framework-arduinoespressif8266
+cd iot-test/node1/ 
+compile
+```
 
 ## Blink the Wemos Light
 ### General
@@ -25,10 +25,19 @@ Connecting the Wemos to a power source and the button with the wemos. After that
 Help was provided by ulno via the raspberry pis [help pages](https://iotgateway/doc/nodehelp/button).
 
 ### Code in Setup.cpp
-		output(blue, ONBOARDLED, "off", "on").set("off");
-		input(b1, D3, "depressed", "pressed");
+
+```c++
+output(blue, ONBOARDLED, "off", "on").set("off");
+input(b1, D3, "depressed", "pressed");
+```
 
 ### Hardware Setup
+- Wemos
+- Sunflower Button
+- Wires for connecting
+- Raspberry Pi
+- Dongle for connecting the Wemos to the Raspberry
+
 ![](challenge0/hardware_button.jpg) 
 
 ### NodeRED Setup
@@ -45,23 +54,39 @@ For the smartphone access we just had to go to the [UI]() page provided by NodeR
 We were able to find quality help on the [pages](https://iotgateway/doc/node_help/rgb_single) ulno provided in his help directory.
  
 ### Code in Setup.cpp
- 		rgb_single(led, D1, D2, D3, true);
+
+```c++
+rgb_single(led, D1, D2, D3, true);
+```
  		
 ### Hardware Setup
+- Wemos
+- Sunflower LED
+- Wires for connecting
+- Raspberry Pi
+- Dongle for connecting the Wemos to the Raspberry
+
 ![](challenge1/led.jpg)
 
 ### GUI
+We were able to optain the GUI on the smartphone by joining the raspberries WIFI and open the iotgateway-rednode GUI.
 ![](challenge1/led_smartphone.jpeg)
 
 ### NodeRED Setup
+We needed to turn on the LED first to be able to set different colors to the LED. We weren't aware of the color-picker so that is why we had input for blue, green and red. Ulno provided us with the info and from then on the implementation went very smoothly.
+
 ![](challenge1/rgb_led_nodered.png)
  		
 ## RGB-LED-Strip w/ NodeRED
 ### General
-Like with the LED we were able to get a LED-strip up and running, by help of the [documentation](https://iotgateway/doc/node_help/rgb_strip). Communication was done through NodeRED again. This time we used the GUI for NodeRED on the laptop as the picture will show later on. NodeRED was exported to be able to redo the [setup](challenge2/led_strip.json).
+Like with the LED we were able to get a LED-strip up and running, by help of the [documentation](https://iotgateway/doc/node_help/rgb_strip). Communication was done through NodeRED again. This time we used the GUI for NodeRED on the laptop as the picture will show later on. NodeRED was exported to be able to redo the [setup](challenge2/led_strip.json). As we only switched the strip with the LED we haven't took a new photo and besides the one hardware change we used the same hardware like in the challenge before.
 
 ### Code in Setup.cpp
-		rgb_strip(strip, 7, WS2812, D4, GRB);
+
+```c++
+rgb_strip(strip, 7, WS2812, D4, GRB);
+```
+
 ### NodeRED
 ![](challenge2/led_strip_nodered.png)
 ### GUI
@@ -89,6 +114,12 @@ As the third challenge we needed to get up a lightsensor. The used [NodeRED]() t
 So we had to come up with a custom implementation of a smart lock. We were able to do this with a relais, a smart lock and two buttons on the hardware side. We still used [NodeRED](lock/lock-flow.json) to broadcast messages to the relais, when the buttons were pressed. 
 
 ### Hardware Setup
+- 2x Wemos
+- Sunflower Buttons
+- Relay
+- Lock
+
+We were able to unlock and lock the lock over the relais. One of the wemos was not conntected with the lock so we made that possible over mqtt and nodered again.
 
 ![](lock/locked.jpg)
 ![](lock/unlocked.jpg)
@@ -102,3 +133,8 @@ As a last challenge we needed to research about ways to secure a smart lock for 
  - [Blacklist Key](https://gizmodo.com/are-smart-locks-secure-or-just-dumb-511093690)
  - [VPN](https://www.tomsguide.com/us/secure-smart-home-how-to,news-19380.html)
  - [Smart Bridges](https://unitedlocksmith.net/blog/8-smart-locks-that-you-can-unlock-with-your-smartphone)
+
+### Personal Opinion // Lesson Learnt
+I really enjoyed this lesson and learned a lot how about a smart lock is working. Also it was a good introduction again to get into microcontroller stuff and NodeRED. I really enjoy by now working with this kind of hardware and software. It is fun :)
+
+Only thing - it was stressful to get that all done in only one day.

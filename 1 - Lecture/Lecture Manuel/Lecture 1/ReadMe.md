@@ -88,8 +88,8 @@
 
 Two resources were needed to get started with building something with the raspberry pi and ulno iotempower:
 
-- https://github.com/iotempire/iotempower
-- https://etcher.io
+- [Github](https://github.com/iotempire/iotempower)
+- [Etcher](https://etcher.io)
 
 ## Getting started with Raspberry Pi and iOTempower
 
@@ -129,7 +129,7 @@ Two resources were needed to get started with building something with the raspbe
 - using the the display wemos for checking and adopting the other wemos
 - we deleted all node files, so we have to use another raspberry pi image to start over again
 
-# Summary
-The reason nothing was working was because of a software update. Something was added to the wemos and therefore the node update wasn't able to take place
+# Personal Opinion // Lesson Learnt
+The reason nothing was working was because of a software update. Something was added to the wemos and therefore the node update wasn't able to take place.
 
-Overall it was a good introduction, but lacking in pratical examples - because of the failure of the update we weren't able to do anything for about 2hrs.
+Overall it was a good introduction, but lacking in pratical examples - because of the failure of the update we weren't able to do anything for about 2hrs and maybe need to catch that up on our next session.
