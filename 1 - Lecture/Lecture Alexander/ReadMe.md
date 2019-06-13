@@ -20,3 +20,7 @@
 
 
 ## [Lecture 5](./Lecture%205/ReadMe.md)
+- [Project 2: Presentations](./Lecture%205/ReadMe.md#Project%202:%20Presentations)
+
+## [Lecutre 6](./Lecture%206/ReadMe.md)
+- [Project 3: Brainstorming](./Lecture%206/ReadMe.md#Project%203:%20Brainstorming)
