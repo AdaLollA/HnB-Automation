@@ -189,6 +189,24 @@ We were able to implement a two-factor-authentication-flow using NodeRED on mobi
 - Lock
 
 ## NodeRED
+We subscribed to the topic of the RFID-sensor and resent it to our MQTT-Store.
+
+When the store gets back to NodeRED, NodeRED sends a message via IFTTT to telegram, only to a specific user, as we have **smart** lock. The user will also use NodeRED to input the code we got over the telegram notification and we send the code back for equality-check to the MQTT-Store.
+
+![](nodered.jpg)
 ## MQTT-Store
+We managed to develop a [MQTT-Store](https://github.com/AdaLollA/HnB-Automation/tree/develop/1%20-%20Lecture/MQTT%20Ticket%20Simulator/src/com/fhooe/mcm/haba) which stores the two RFIDs and creates a corresponding 4 digit code which is sent back to NodeRED
 ## Telegram Integration
+![](push.jpg)
 ## IFTTT
+![](ifttt.png)
+
+***
+***
+
+### Personal Opinion // Lesson Learnt
+
+I found it quite interesting to research about the history of older IoT and automation technology, but in my opinion the presentations were a bit too long. 15 minutes/presentation should have been enough to catch up with the hard facts.
+
+Developing a smart lock with restricting access to specific devices/persons was really interesting. My part on this was the MQTT Store Simulator. Due to problems in communication we often changed our architecture - sometimes was a bit frustrating but we managed it anyway (Y).
+
