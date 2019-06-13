@@ -68,9 +68,15 @@
 
 [online course](http://wbt5.knx.org/)
 
+Solved online course during class
+
+[Certificate]()
+
 ##### Lab Work
 
-* Philips Hue
+Wired the smart lock and RFID chip again. Adopted the Wemos nodes in the IoT framework. The rest of the team worked on the Node-red and webhook implementation, so the smart lock can be unlocked from a smart phone.
 
-* zWave
-* 
+[link to documentation]()
+
+##### Conclusion
+
