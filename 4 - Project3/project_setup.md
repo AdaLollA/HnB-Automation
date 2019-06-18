@@ -1,8 +1,24 @@
 # Project Setup
-## General
+## OpenHab on Raspberry Pi
 We used Openhab on one of the Raspberries as interface.
-    1. flash Openhab image onto the Raspberry SD
-    ...
+1. download OpenhabianPi image
+2. write image onto SD card of the Raspberry Pi
+
+### SSH Connection to Raspberry Pi
+- to connect to the SSH to work with the openhab console on the Raspberry, there are two possibilities we tried:
+    1. over command line:
+        ```
+        ssh -p 22 openhab@localhost
+        ```
+    2. with putty: enter IP-address of Raspberry where Openhab is running, set port to 22
+- Important is to set the port to 22
+- username: openhabian
+- password: openhabian
+
+### Access File of Raspberry Pi
+Conveniently possible via Explorer. Type in "\\ip-address" of Raspberry Pi in the location line of the Explorer.
+- Files can now be opened and edited
+- Log files can also be opened here
 
 ## Scenario 1 - Smart Lock
 1. connect a lock to a relais
