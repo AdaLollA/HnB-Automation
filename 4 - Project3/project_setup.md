@@ -16,7 +16,7 @@ We used Openhab on one of the Raspberries as interface.
 - password: openhabian
 
 ### Access File of Raspberry Pi
-Conveniently possible via Explorer. Type in "\\ip-address" of Raspberry Pi in the location line of the Explorer.
+Conveniently possible via Explorer. Type in "\\\ip-address" of Raspberry Pi in the location line of the Explorer.
 - Files can now be opened and edited
 - Log files can also be opened here
 
@@ -64,7 +64,7 @@ Conveniently possible via Explorer. Type in "\\ip-address" of Raspberry Pi in th
 4. add Hue lamp to OpenHab
     1. Use Hue Binding to add Hue
     2. Hue brightness is editable in control panel
-5. type "\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
+5. type "\\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
 6. open the configuration folder
 7. add item "Light" and "Hue_Light" to ["haba.items"](./openhab_files/haba.items) in the items folder
 8. add rule "Natural Light" to ["haba.rules"](./openhab_files/haba.rules) in the rules folder
@@ -82,7 +82,7 @@ Conveniently possible via Explorer. Type in "\\ip-address" of Raspberry Pi in th
     2. Use Z-Wave Binding to find Z-Wave Node
     3. Add Z-Wave Node
     4. Plug can be switched on or off in control panel
-5. type "\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
+5. type "\\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
 6. open the configuration folder
 7. add item "Plug" and "Humidity" to ["haba.items"](./openhab_files/haba.items) in the items folder
 8. add rule "Air Dampener" to ["haba.rules"](./openhab_files/haba.rules) in the rules folder
@@ -101,7 +101,7 @@ When a fire sensor gets a below a certain value, a fire alarm shall be made visi
 4. add Hue lamp to OpenHab
     1. Use Hue Binding to add Hue
     2. Hue brightness and color is editable in control panel
-5. type "\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
+5. type "\\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
 6. open the configuration folder
 7. add item "Fire" and "Hue_Color" to ["haba.items"](./openhab_files/haba.items) in the items folder
 8. add rule "Fire Alarm" to ["haba.rules"](./openhab_files/haba.rules) in the rules folder
