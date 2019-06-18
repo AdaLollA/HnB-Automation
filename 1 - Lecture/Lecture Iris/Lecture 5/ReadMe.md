@@ -120,7 +120,7 @@ To show a text on the display, we did pretty much the same as when adding the te
     ![Plug in control panel](./images/zwave_node_final.PNG)
 
 ### Home Assistant experiments
-Were mainly done by Manuel and Alex, documentation to be found [here](../../Lecture%20Manuel/Lecture%205/ReadMe.md)
+Were mainly done by Manuel and Alex (including Kodi), documentation to be found [here](../../Lecture%20Manuel/Lecture%205/ReadMe.md)
 
 ## Opinion/Thoughts
 This day we split the work very well - while I was working with OpenHab all the time, Manuel and Alex worked with HomeAssistant and Michael setup all the hardware things (Lorenz was sick). I also helped out Martin Schneglberger from the other group, as they had a lot of problems with getting OpenHab, the Philips Hue and the Z-Wave Plug to work.
