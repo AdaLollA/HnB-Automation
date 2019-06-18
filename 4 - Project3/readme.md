@@ -1,6 +1,5 @@
 # Project 3
-
-## General
+## General Instructions
 - Integration several domains (Mobile access/ voice control)
 - 4 small scenarios
 - 4 reasonable situations
@@ -9,4 +8,14 @@
 - spend one hour to create/plan story
 - explain to ulno and adjust
 
-## Plan
+## Project Proposal
+- 4 simple scenarios in the [project proposal](./project_proposal.md)
+- eventual 5th scenario (fire/gas recognition)
+
+## User Scenario
+After the project proposal was accepted, we developed a more sophisticated [user scenario](./user_scenario.md)
+- main person: Yeet
+- detailed description of a typical day in his life with home automation
+
+## Project Setup
+detailed description of the [project setup](./project_setup.md)
