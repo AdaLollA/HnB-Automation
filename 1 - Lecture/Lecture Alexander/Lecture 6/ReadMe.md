@@ -33,5 +33,16 @@ Yeet has a date with his soon-to-be third girlfriend. He is in a hurry and leave
 Gas/fire sensor for detecting burning stove?
 
 
-TODO:
-- Smoke detector/gas sensor/fire sensor
+### Project 3 - Thoughts/Opinion
+#### Thoughts on the team
+Working together with Manuel, Michael, Lorenz, and Iris worked really well. We used divide and conquer to split the several tasks among all team members. With Michael and Lorenz being our hardware guys, Manuel, Iris, and I focused on implementing and configuring the gadgets to send MQTT messages or something similar. Lorenz and I focused on implementing the Vertical Gardening gadget and really enjoyed figuring out the sensors that I ordered from Amazon.
+
+#### Thoughts on the watering system
+Implementing the watering system was not easy. The sensors that were ordered on Amazon turned out to give some problems. We did not have enough Wemos devices to use the analog pin of each sensor (which would give actual numerical readings instead of LOW or HIGH). Thus, we used a board that was lying around in Lorenz's room that already had a built in I²C temperature sensor. We used the only analog pin of the Wemos to measure the ground moisture of the plant as it is the most critical aspect of the watering system. The remaining brightness sensor provided digital readings (LOW/HIGH) and was calibrated accordingly to not be too sensitive.
+
+#### Thoughts on Arduino IDE and implementing
+Next up was the implementation of the Wemos. Having only worked with the pre-flashed Wemos during the lectures, it required a lot of googling and troubleshooting to write actual C++ code in the Arduino IDE to connect the Wemos to the network, to read the sensors, to publish their read values via MQTT and to subscribe to a MQTT topic. With the help of Lorenz however, we managed to get a working watering system.
+All in all I learned the most during this process. Finally, it became clearer how the IoTFramework might work and how I would be able to install my own Home and Building Automation aspects at home.
+
+#### Thoughts on the final video
+The video was a lot of teamwork. Figuring out a sort of "script" what to do and how to tell a story proved to be difficult at first, but as soon as the first scenario was filmed the ideas kept flowing and we improvised a lot. The end result turned out the way it is thanks to Manuel who did the whole processing of the raw materials into a finished video product.
