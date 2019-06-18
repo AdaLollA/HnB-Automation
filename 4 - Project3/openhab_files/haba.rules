@@ -23,12 +23,7 @@ then
     val lightIntensity = Light.state as Number
 
     val newIntensity = lightIntensity/150
-    if (lightIntensity < 100) {
-        Hue_Light.sendCommand(new PercentType(newIntensity * 100))
-    } else {
-        Hue_Light.sendCommand(new PercentType(newIntensity * 100))
-    }
-
+    Hue_Light.sendCommand(new PercentType(newIntensity * 100))
 end
 
 rule "Air Dampener"

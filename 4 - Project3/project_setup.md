@@ -27,7 +27,42 @@ We used Openhab on one of the Raspberries as interface.
         - lock can be opened/locked via openhab
 
 ## Scenario 2 - Adapt light according to natural light
+1. connect the light sensor to a Wemos Node
+2. setup Hue Lamp
+3. add light sensor in OpenHab
+    1. add channel to the Generic MQTT Thing created in the Smart Lock
+    2. set MQTT topic to node#/photo
+    3. sensor value is shown in control panel
+4. add Hue lamp to OpenHab
+    1. Use Hue Binding to add Hue
+    2. Hue brightness is editable in control panel
+5. type "\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
+6. open the configuration folder
+7. add item "Light" and "Hue_Light" to ["haba.items"](./openhab_files/haba.items) in the items folder
+8. add rule "Natural Light" to ["haba.rules"](./openhab_files/haba.rules) in the rules folder
+    - the rule uses the sensed light intensity and adapt Hue brightness accordingly
 
 ## Scenario 3 - Auomatic air dampening
+1. connect the humidity sensor to a Wemos Node
+2. plug Z-Wave controller in on the Raspberry where Openhabian is installed
+3. add humidity sensor in OpenHab
+    1. add channel to the Generic MQTT Thing created in the Smart Lock
+    2. set MQTT topic to node#/temperature/humidity
+    3. sensor value is shown in control panel
+4. add Plug to OpenHab
+    1. Use the Z-Wave Binding to add a Z-Wave Controller (security: none)
+    2. Use Z-Wave Binding to find Z-Wave Node
+    3. Add Z-Wave Node
+    4. Plug can be switched on or off in control panel
+5. type "\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
+6. open the configuration folder
+7. add item "Plug" and "Humidity" to ["haba.items"](./openhab_files/haba.items) in the items folder
+8. add rule "Air Dampener" to ["haba.rules"](./openhab_files/haba.rules) in the rules folder
+    - the rule uses the sensed humidity
+    - if the humidity is below a certain value, the plug is turned on
+    - if not, the plug is turned off
+
+## Scenario 4 - Fire Alarm
+1. connect fire sensor to a Wemos Node
 
 ## Scenario 4 - Garden Watering

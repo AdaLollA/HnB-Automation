@@ -105,10 +105,14 @@ In the RFID Project we split the work to get it done. The first steps to do were
     ![hardware-setup](RFID-hardware-setup.jpeg)
 5. setup the software
     - setup commands in the setup.cpp files of the two nodes
-        ```
-        node1: mfrc522(rfid, 32);
-        node2: relais(lock, D3, "on", "off");
-        ```
+        - node1:
+            ``` 
+            mfrc522(rfid, 32);
+            ```
+        - node2:
+            ``` 
+            relais(lock, D3, "on", "off");
+            ```
     - When the RFID reader reads an RFID chip, a MQTT-message is sent to the Raspberry Pi
     - MQTT triggers a request to the ticket simulator which sends an authentication code
     - the code is received as a push notification on the phone, this was realised with IFTTT
