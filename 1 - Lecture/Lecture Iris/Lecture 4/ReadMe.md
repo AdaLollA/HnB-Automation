@@ -193,6 +193,28 @@ Does only Amazon Echo Plus support Zigbee or Amazon Echo and Echo Dot too (speci
     - higher priority overrides state
     - avoid collisions
 
-## KNX Certificate
+## KNX
 did the KNX certificate, can be found in the Lecture 4 folder
+
+### KNX Exercise
+We actually did the exercise itself in Lecture 5, but did all the preparation work in Lecture 4, which is why I put it here.
+1. Turn on KNX
+2. Connect to KNX via the USB Cable
+3. Use ETS to work with KNX
+    1. add current KNX device as device
+    ![Add KNX device](./images/add_device.PNG)
+    2. create a new project
+    3. Add Building, Floor and Room to project
+    4. Open Catalog, search for "AMI-0816.01" and add it to the room
+    5. Select the switch
+    6. Select f. e. Channel A, do a right click
+    7. Select "Write Value" -> "On"
+    8. LED turns on
+    ![Write Value](./images/write_value.png)
+
+## Thoughts/Opinions
+I did not like the presentations of the protocols. For me, it doesn't really make sense to listen to the explanation of so many protocols in such a short time and have to take notes and have to think about questions. That way, it's quite sure, that I don't remember anything of the protocols after the presentations. But maybe others had a more positive experience of the presentations. Another point for me was, that the presentations took a lot of time that we maybe would have been able to put to a better use.
+
+The KNX exercise was also really confusing for us. Lorenz was the one who went with Ulno to the KNX and he was sick the day we did the exercise. So we first didn't know what do at all. After Ulno showed us at least what we should try to control on the KNX, we were actually able to do it pretty fast. I think, if there would have been more time, I also would have liked to play around with KNX more, but we had to get all the other stuff done too. In the KNX exercise we all worked together - Alex had downloaded ETS and we all figured out together how to light the LED over ETS then.
+
 
