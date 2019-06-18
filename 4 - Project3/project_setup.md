@@ -25,6 +25,18 @@ We used Openhab on one of the Raspberries as interface.
         - set topic command topic to node#/lock/set
         - set on/off to the lock in the control panel
         - lock can be opened/locked via openhab
+6. write the [ticket simulator](../../MQTT%20Ticket%20Simulator) in Java
+    - simulates expiring tickets
+    - holds references to the RFID cards and the phones belonging to the RFID cards
+    - verifies that which person sent which token
+7. When the RFID reader reads an RFID chip, a MQTT-message is sent to the Raspberry Pi
+    - MQTT triggers a request to the ticket simulator which sends an authentication code
+    - the code is received as a push notification on the phone, this was realised with IFTTT
+        - the rfid cards are mapped to users in the authentication server
+        - a click on the notification forwads to the nodeRed UI
+        - the code has to be entered there and confirmed, this validates the user
+    - after validating the user, the lock gets opened
+    - the detailed setup in the NodeRed interface can be seen in the following picture
 
 ## Scenario 2 - Adapt light according to natural light
 1. connect the light sensor to a Wemos Node
