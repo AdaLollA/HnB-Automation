@@ -63,6 +63,24 @@ We used Openhab on one of the Raspberries as interface.
     - if not, the plug is turned off
 
 ## Scenario 4 - Fire Alarm
+When a fire sensor gets a below a certain value, a fire alarm shall be made visible by turning a Hue Lamp on and red.
 1. connect fire sensor to a Wemos Node
+2. setup Hue Lamp
+3. add fire sensor in OpenHab
+    1. add channel to the Generic MQTT Thing created in the Smart Lock
+    2. set MQTT topic to node#/fire
+    3. sensor value is shown in control panel
+4. add Hue lamp to OpenHab
+    1. Use Hue Binding to add Hue
+    2. Hue brightness and color is editable in control panel
+5. type "\\ip-address" in the explorer (the IP-Adress of the Raspberry where Openhabian is installed has to be used) - the Openhabian folder can be seen now
+6. open the configuration folder
+7. add item "Fire" and "Hue_Color" to ["haba.items"](./openhab_files/haba.items) in the items folder
+8. add rule "Fire Alarm" to ["haba.rules"](./openhab_files/haba.rules) in the rules folder
+    - the rule uses the sensed fire intensity
+    - if the intensity is below a certain value, the lamp is turned on and a HSB value is sent to the lamp
+        - turns brightness to 100%
+        - turns light red
+    - if no, the lamp is turned off
 
-## Scenario 4 - Garden Watering
+## Scenario 5 - Garden Watering
