@@ -112,3 +112,20 @@ When a fire sensor gets a below a certain value, a fire alarm shall be made visi
     - if no, the lamp is turned off
 
 ## Scenario 5 - Garden Watering
+Using a brightness sensor, a temperature sensor, and a ground moisture sensor the system determines automatically whether a flower needs to be watered or not.
+The source code can be found [here](./Watering%20System/setup/setup.ino).
+1. connect brightness sensor to Wemos Node
+2. connect temperature sensor to Wemos Node
+3. connect ground moisture sensor to Wemos Node
+4. open Arduino IDE
+5. install device 'Wemos D1 Mini' (not included in vanilla Arduino IDE)
+6. install library 'PubSubClient' (MQTT client library)
+7. create a new ```.ino``` file
+8. implement ```setup()``` and ```loop()``` functions
+   1. connect to WiFi via SSID and password
+   2. connect to MQTT Broker via IP address, port, username and password
+   3. read sensor values (I²C for temperature, analog pin for ground moisture, digital pin for brightness)
+   4. publish read sensor values using several MQTT topics
+   5. check for incoming MQTT messages to start the water pump or not
+9. deploy implementation to Wemos Node
+10. connect Wemos to independent power source
