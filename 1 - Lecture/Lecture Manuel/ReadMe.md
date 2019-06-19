@@ -69,7 +69,7 @@ KNX was frustrating at first, but in my opinion more because we didn't knew how 
 
 #### Lecture 7 :thumbsup:
 
-#####Personal Opinion // Lesson learnt
+##### Personal Opinion // Lesson learnt
 
 In final session every team presented their videos and projects they did. We all had a similar setup but different ideas. One group had a family scenario, another one implementing a security layer for a company and a student kind of way to use home automation. We did also a different way in using a home automation-excited man who automated his home all by himself. Because you know. Yeet's the man. Because he can. Yeet is smart!
 

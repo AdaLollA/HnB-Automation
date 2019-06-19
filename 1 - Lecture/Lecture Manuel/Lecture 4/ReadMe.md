@@ -113,11 +113,11 @@ In the catalogue we searched for the "AMI-0816.01", which we added to the room.
 
 We selected the switch, turned it on and off and added a delay, like seen in the picture below:
 
-![](8.png)
+![](8.PNG)
 
 After that, we had a look in the diagnostics and were able to see our changes made to the hardware.
 
-![](10.png)
+![](10.PNG)
 
 So we were able to control the hardware with the ETS software.
 
