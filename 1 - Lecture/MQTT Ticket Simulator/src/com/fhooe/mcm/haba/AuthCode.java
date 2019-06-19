@@ -14,6 +14,7 @@ public class AuthCode {
         Date now = new Date();
         this.validUntil = new Date(now.getTime() + (60 * 1000));
         this.value = AuthCode.generate();
+        System.out.println("Generated Code: " + this.value);
     }
 
     public AuthCode(String rfID) {
@@ -46,10 +47,12 @@ public class AuthCode {
     public byte[] createResponse() {
         String response;
         if (this.stillValid()) {
-            response = "off";
-        } else {
             response = "on";
+        } else {
+            response = "off";
         }
+
+        System.out.println("The lock will: " + response);
         return (response).getBytes();
     }
 }

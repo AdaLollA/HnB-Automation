@@ -92,6 +92,7 @@ Conveniently possible via Explorer. Type in "\\\ip-address" of Raspberry Pi in t
 
 ## Scenario 4 - Fire Alarm
 When a fire sensor gets a below a certain value, a fire alarm shall be made visible by turning a Hue Lamp on and red.
+
 1. connect fire sensor to a Wemos Node
 2. setup Hue Lamp
 3. add fire sensor in OpenHab
@@ -114,6 +115,7 @@ When a fire sensor gets a below a certain value, a fire alarm shall be made visi
 ## Scenario 5 - Garden Watering
 Using a brightness sensor, a temperature sensor, and a ground moisture sensor the system determines automatically whether a flower needs to be watered or not.
 The source code can be found [here](./Watering%20System/setup/setup.ino).
+
 1. connect brightness sensor to Wemos Node
 2. connect temperature sensor to Wemos Node
 3. connect ground moisture sensor to Wemos Node
@@ -129,3 +131,57 @@ The source code can be found [here](./Watering%20System/setup/setup.ino).
    5. check for incoming MQTT messages to start the water pump or not
 9. deploy implementation to Wemos Node
 10. connect Wemos to independent power source
+
+## Scenario 6 - Voice Control
+Easily control light and other stuff via voice control - by the help of MyCraft.
+### Install myCroft
+- install from github - start with 
+
+```bash
+cd ~/mycroft-core
+git clone https://github.com/MycroftAI/mycroft-core.git
+cd mycroft-core
+bash dev_setup.sh
+./start-mycroft.sh debug
+```
+
+- mycroft is now installed on your linux (either raspi or other linux distro)
+- mycroft needs skills. 
+
+
+### openhab installation
+```bash
+msm install openhab
+cd ~/.mycroft/skills
+git clone https://github.com/openhab/openhab-mycroft.git skill-openhab
+workon mycroft
+cd skill-openhab
+pip install -r requirements.txt
+```
+
+- adding the block of json to mycroft.conf in `~/.mycroft`
+
+```json
+"openHABSkill": {
+   "host": "192.168.12.1",
+   "port": "8080"
+}
+```
+
+### openhab config
+- config in .[items](https://www.openhab.org/docs/configuration/items.html#item-definition-and-syntax)-file on opnehab
+
+```
+Color KitchenLight "Kitchen Light" <light> (gKitchen) ["Lighting"] {channel="hue:0200:1:bloom1:color"}
+Color DiningroomLight "Diningroom Light" <light> (gKitchen) ["Lighting"] {channel="hue:0200:1:bloom1:color"}
+Switch GoodNight "Good Night"	["Switchable"]	
+
+Number MqttID1Temperature "Bedroom Temperature" <temperature> ["CurrentTemperature"] {mqtt="<[mosquitto:mysensors/SI/1/1/1/0/0:state:default]"}
+Number MqttID1Humidity "Bedroom Humidity" ["CurrentHumidity"] {mqtt="<[mosquitto:mysensors/SI/1/0/1/0/1:state:default]"}
+
+Group gThermostat "Main Thermostat" ["gMainThermostat"]
+Number MainThermostatCurrentTemp "Main Thermostat Current Temperature" (gMainThermostat) ["CurrentTemperature"]
+Number MainThermostatTargetTemperature "Main Thermostat Target Temperature" (gMainThermostat) ["TargetTemperature"]
+String MainThermostatHeatingCoolingMode "Main Thermostat Heating/Cooling Mode" (gMainThermostat) ["homekit:HeatingCoolingMode"]
+```
+
