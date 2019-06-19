@@ -93,7 +93,7 @@ The debators split into pro and con. The following people are part of the follow
 - second question: Is assisted living really such a boon for people who need it - do you have some more examples for that?
 	- gstöttner: people are used to wahsing machines now - why not the same thing with HABA?
 	- ulno: wheelchair people use HABA to make their life easier        
-   
+  
 - schneglberger:
 	- comfort is ok
 	- keep mind on what happens when system does not work
@@ -142,7 +142,7 @@ The debators split into pro and con. The following people are part of the follow
 - obermayr: 
 - schneglberger: one home unlocked --> more homes unlocked easier
 - spindlbalker: sit in the car and unlock homes way easier
- 
+
 ## End of debate
 ### Open question round from the audience
 
@@ -208,5 +208,5 @@ We managed to develop a [MQTT-Store](https://github.com/AdaLollA/HnB-Automation/
 
 I found it quite interesting to research about the history of older IoT and automation technology, but in my opinion the presentations were a bit too long. 15 minutes/presentation should have been enough to catch up with the hard facts.
 
-Developing a smart lock with restricting access to specific devices/persons was really interesting. My part on this was the MQTT Store Simulator. Due to problems in communication we often changed our architecture - sometimes was a bit frustrating but we managed it anyway (Y).
+Developing a smart lock with restricting access to specific devices/persons was really interesting. My part on this was the MQTT Store Simulator. Due to problems in communication we often changed our architecture - sometimes was a bit frustrating but we managed it anyway :tada::grin:.
 
