@@ -65,3 +65,6 @@ voice kind of hard to understand again, like in first group
 The presentations were kind of nice - you got to see a lot of what's possible to do over just one weekend, though it was really very stressful to do the whole project + video in such a short time. A lot of interesting ideas also from our colleagues. The feedback to the project itself can be found in [Lecture 6](../Lecture%206%20-%20Project/ReadMe.md).
 
 I especially liked the idea of group 3 a lot, who automated the whole morning routine. Also their video was probably the best. The video of the last group was also not bad, but it didn't feel like really a person going through the day - so not that much of a user story.
+
+**Short Overall Impression of Course**
+For me, the course was very stressful. I felt like I could have learned a lot more especially about the electronics part of the course if there would have been more time. Also some of the parts felt like a bit of a waste of time, especially considering the short time we had. One part f.e. was the presentations on the different protocols, which didn't really help me gain any knowledge but took lots of time.
