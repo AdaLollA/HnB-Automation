@@ -114,7 +114,7 @@ When a fire sensor gets a below a certain value, a fire alarm shall be made visi
 
 ## Scenario 5 - Garden Watering
 Using a brightness sensor, a temperature sensor, and a ground moisture sensor the system determines automatically whether a flower needs to be watered or not.
-The source code can be found [here](./Watering%20System/setup/setup.ino).
+The source code can be found [here](./Watering%20System/setup/setup.ino). Detailed hardware specifications can be found [here](https://github.com/AdaLollA/HnB-Automation/tree/develop/4%20-%20Project3/Watering%20System).
 
 1. connect brightness sensor to Wemos Node
 2. connect temperature sensor to Wemos Node
