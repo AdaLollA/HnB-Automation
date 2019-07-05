@@ -39,7 +39,7 @@ please click the headings of the lectures to get directly to the lecture ReadMe
 - HomeAssistant experiments
 - Thoughts/Opinions
 
-## [Lecture 6](./Lecture%206/ReadMe.md)
+## [Lecture 6](./Lecture%206%20-%20Project/ReadMe.md)
 - Project 3 Thoughts/Opinions
 
 ## [Lecture 7](./Lecture%207/ReadMe.md)
