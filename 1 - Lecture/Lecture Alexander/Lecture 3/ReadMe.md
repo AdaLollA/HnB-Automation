@@ -1,6 +1,9 @@
 # Lecture 3
 ## S1810455024, Alexander Stelzhammer
 
+### Debate: Should Everyone Automate Their Homes?
+My notes to the debate can be found [here](../../../2%20-%20Project1/Debate_Notes_Stelzhammer.md#Project%201:%20Debate).
+
 ### Research: ModBus
 #### [Functionality](https://www.schneider-electric.com/en/faqs/FA168406/)
 - enables communication among many devices connected to the same network
