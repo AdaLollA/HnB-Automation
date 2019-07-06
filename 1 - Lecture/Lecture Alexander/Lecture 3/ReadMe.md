@@ -73,9 +73,9 @@
 
 ### Exercise: RFID Lock
 We divided the tasks for the RFID lock to work in parallel:
-- Manuel was tasked with creating an authentication server in Java.
-- Michael and Iris built the RFID lock using the hardware.
-- Lorenz and I used Node-RED to forward all messages to their respective destination.
+- [Manuel](../../Lecture%20Manuel/Lecture%203/ReadMe.md#Smart%20Lock%20Implementation) was tasked with creating an authentication server in Java.
+- [Michael](../../Lecture%20Michael/Lecture%203/ReadMe.md) and [Iris](../../Lecture%20Iris/Lecture%203/ReadMe.md#RFID%20Project) built the RFID lock using the hardware.
+- [Lorenz](../../Lecture%20Lorenz/Lecture%203/ReadMe.md#Smart%20Lock%20Progress) and I used Node-RED to forward all messages to their respective destination.
 
 **The basic setup is the following:**
 Every person that is allowed to unlock the RFID lock possesses their own RFID chip. Once the RFID chip is presented to the RFID scanner, an authentication code is sent to the user's mobile phone. Using this authentication code the user can authorize access and unlock the lock.
@@ -90,3 +90,10 @@ Every person that is allowed to unlock the RFID lock possesses their own RFID ch
 The Node-RED setup is displayed here: ![node_red_setup]
 
 [node_red_setup]: ./RFID_Configuration.PNG "RFID Configuration in Node-RED"
+
+
+### Thoughts/Opinion
+The research task was very annoying. You can find little to no information on the topics to answer the questions provided by Ulno. Somehow we managed to collect enough information for the presentation, however there was no time to actively read the information to actually memorize some of it. It felt very stressful due to the tight schedule. If we had had more time, we could have researched the topics more thoroughly.
+
+Slowly, I am becoming an expert in Node-RED, almost to the point that the configuration work is left to me. This is pretty nice because previously I felt like a letdown to my team because I was not as experienced with a Wemos or the other sensors as my team mates.
+It is suprising how easy it is to let nodes communicate via MQTT.

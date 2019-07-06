@@ -83,7 +83,6 @@
   - problems with Spotify integration
 
 
-
-### Project 3: Review of Final Presentations
+### Thoughts/Opinion
 It was very awesome to see what the other groups built, what they used and especially what challenges and problems they were facing. Especially Group 3 ("Mannequin") showed awesome ways to automate the morning routine (coffee machine, lights, ...). 
 Also, the presentations give a big incent to actually try to automate more in your home or to try out other stuff (Mycroft, Kodi, HomeAssistant, Philips Hue, ...).

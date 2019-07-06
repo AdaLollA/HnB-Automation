@@ -119,3 +119,6 @@ Turns out that the Pi was using an updated version that is not compatible with t
 
 ### Challenge: Analog Light Sensor
 [Can be found here](./Challenges/Analog%20Light%20Sensor/ReadMe.md)
+
+### Thoughts/Opinion
+Slowly, things are starting to make sense. However, the framework is still magic to me and why everything works the way it does will hopefully be answered in the coming lectures. There were small achievements today, so the frustration is stating to wear off. I am curios how the coming lectures will go.
