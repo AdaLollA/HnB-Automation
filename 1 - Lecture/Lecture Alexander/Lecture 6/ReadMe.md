@@ -36,7 +36,7 @@ Gas/fire sensor for detecting burning stove?
 ### Project 3: Watering System
 Lorenz and I were tasked with the implementation of the watering system. We spent two days on the weekend to setup the hardware and its wiring as well as programming the Wemos D1 Mini to read the sensors and react accordingly to them.
 We faced several difficulties, mainly due to inappropriate hardware and our toolbox looked away in FH2 on a Sunday afternoon.
-If you want to know more about our adventures on said weekend, please refer to [Lorenz' documentation](../../../4%20-%20Project3/Watering%20System/ReadMe.md).
+If you want to know more about our adventures on said weekend, please refer to [Lorenz' documentation](../../../4%20-%20Project3/Watering%20System/readme.md).
 
 ### Thoughts/Opinion
 #### Thoughts on the team
