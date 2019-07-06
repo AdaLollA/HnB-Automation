@@ -147,13 +147,15 @@ This question is answered by [Iris](../../Lecture%20Iris/Lecture%204/ReadMe.md#D
 - dominant and recessive state, have also priority
 
 
-### Exercise: KNX
+### Exercise: KNX - Part I
 I completed the KNX tutorial and got the KNX-Certificate. It can be found [here](./KNX_Certification_Stelzhammer.pdf).
 
 ### Exercise: Philips Hue
-
+The Philips Hue were made adjustable using Node-RED. A simple user interface was provided to adjust the brightness and the color. The inputs were connected to the respective light bulb(s). In Node-RED the input is transformed into a respective JSON object that can be interpreted by the Philip Hue bulbs.
+The configuration can be seen below:
 ![node_red_configuration]
 
+An export of the configuration can be seen below:
 ```json
 [
   {

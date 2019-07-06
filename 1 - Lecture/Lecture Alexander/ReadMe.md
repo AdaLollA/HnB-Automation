@@ -7,12 +7,13 @@
   
 ## [Lecture 2](./Lecture%202/ReadMe.md)
 - [Exercise: Let’s Switch on a Light](./Lecture%202/ReadMe.md#Exercise:%20Let's%20switch%20on%20a%20light)
+- [Upgrading the Pi](./Lecture%202/ReadMe.md#Upgrading%20the%20Pi)
 - [Challenge: RGB LED](./Lecture%202/Challenges/RGB%20LED/ReadMe.md)
 - [Challenge: Analog Light Sensor](./Lecutre%202/Challenges/Analog%20Light%20Sensor/ReadMe.md)
-- [Upgrading the Pi](./Lecture%202/ReadMe.md#Upgrading%20the%20Pi)
 - [Thoughts/Opinion](./Lecture%202/ReadMe.md#Thoughts/Opinion)
-- 
+
 ## [Lecture 3](./Lecture%203/ReadMe.md)
+- [Debate: Should Everyone Automate Their Homes?](./Lecture%203/ReadMe.md#Debate:%20Should%20Everyone%20Automate%20Their%20Homes?)
 - [Research: ModBus](./Lecture%203/ReadMe.md#Research:%20ModBus)
 - [Exercise: RFID Lock](./Lecture%203/ReadMe.md#Exercise:%20RFID%20Lock)
 - [Thoughts/Opinion](./Lecture%203/ReadMe.md#Thoughts/Opinion)
@@ -20,6 +21,8 @@
 ## [Lecture 4](./Lecture%204/ReadMe.md)
 - [Presentation: BacNET, LonWorks, ModBus](./Lecture%204/ReadMe.md#Presentation:%20BacNET,%20LonWorks,%20ModBus)
 - [Presentations of the other teams](./Lecture%204/ReadMe.md#Presentations%20of%20the%20others%20teams)
+- [Exercise: KNX - Part I](./Lecture%204/ReadMe.md#Exercise:%20KNX%20-%20Part%20I)
+- [Exercise: Philips Hue](./Lecture%204/ReadMe.md#Exercise:%20Philips%20Hue)
 - [Thoughts/Opinion](./Lecture%204/ReadMe.md#Thoughts/Opinion)
 
 ## [Lecture 5](./Lecture%205/ReadMe.md)
@@ -30,6 +33,7 @@
 
 ## [Lecutre 6](./Lecture%206/ReadMe.md)
 - [Project 3: Brainstorming](./Lecture%206/ReadMe.md#Project%203:%20Brainstorming)
+- [Project 3: Watering System](./Lecture%206/ReadMe.md#Project%203:%20Watering%20System)
 - [Thoughts/Opinion](./Lecture%206/ReadMe.md#Thoughts/Opinion)
 
 ## [Lecutre 7](./Lecture%207/ReadMe.md)

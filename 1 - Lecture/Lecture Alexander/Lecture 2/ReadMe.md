@@ -2,6 +2,8 @@
 ## S1810455024, Alexander Stelzhammer
 
 ### Exercise: Let’s Switch on a Light
+This task was done with the help of Iris. To see her side of the documentation, please refer to [her documentation](../../Lecture%20Iris/Lecture%202/ReadMe.md#Lighting%20an%20LED%20Day%202).
+
 Turns out that the Pi was using an updated version that is not compatible with the image from the previous lecture. Ulno uploaded a new image and/or provided commands to upgrade 
 - Downloaded the new image
 - Flashed the Pi using the new image

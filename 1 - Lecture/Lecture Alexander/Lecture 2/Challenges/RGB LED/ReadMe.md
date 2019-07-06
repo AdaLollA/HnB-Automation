@@ -1,6 +1,8 @@
 # Challenge: RGB LED
 ## Alexander Stelzhammer, S1810455024
 
+This task was done with the help of Iris. To see her side of the documentation, please refer to [her documentation](../../../../Lecture%20Iris/Lecture%202/ReadMe.md#Switch%20RGB%20Light%20with%20Colour%20Picker).
+
 ### Task
 Using a color picker on a mobile phone the user should be able to manipulate a RGB LED lamp's color.
 
