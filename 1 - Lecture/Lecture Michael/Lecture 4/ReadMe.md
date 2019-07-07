@@ -70,7 +70,7 @@
 
 Solved online course during class
 
-[certificate](https://github.com/AdaLollA/HnB-Automation/blob/develop/1 - Lecture/Lecture Michael/Lecture 4/knxcertification.pdf)
+[certificate](https://github.com/AdaLollA/HnB-Automation/blob/develop/1%20-%20Lecture/Lecture%20Michael/Lecture%204/knxcertification.pdf)
 
 ##### Lab Work
 
