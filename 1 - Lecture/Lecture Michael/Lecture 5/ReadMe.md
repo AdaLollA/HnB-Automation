@@ -5,6 +5,7 @@
 ##### Project 2 Presentations
 
 * Team 1 (my team)
+  * I had to fill in for the live presentation/demo spontaneously since one of the team member got sick
 * Team 2
   * goal is cheap automation
   * Light sensor for setting required lighting in house
@@ -28,4 +29,12 @@
   * music server
   * Question
     * How are the Loxone systems maintained? Are they online or offline?
+
+##### KNX Assignment
+
+Worked together with the team on the given KNX lab assignment.
+
+##### Lab Work
+
+Added and configured some additional sensors for the integration into openHAB.
 

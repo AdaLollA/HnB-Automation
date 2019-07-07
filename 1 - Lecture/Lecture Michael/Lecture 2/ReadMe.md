@@ -20,9 +20,7 @@ There are a lot of update/upgrade options that are necessary for the framework t
 
 The local node-red installation works with the mqtt data provided by the Wemos nodes.
 
-##### Project 1
-
-[link to documentation]()
+##### Lab Work
 
 I did some wiring work, connecting the sensors like button to the Wemos, since the rest of the group was already working on the IoT framework configurations.
 

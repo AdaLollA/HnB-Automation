@@ -7,7 +7,6 @@
 ##### Debate 
 
 * Everybody should automate their home! True or false?
-
 * Pro
   * More comfort
   * Enhance security
@@ -28,9 +27,10 @@
   * should children use smart homes
   * possibly impairing development of critical thinking
   * regulate access 
-
 * No deeper discussion about security or privacy
 * Con team had better arguments and won the audience vote
+* Personal Opinion
+  * Con team was better prepared and dominated the discussion, clear win
 
 ##### Presentation Preparation
 
@@ -57,14 +57,10 @@ Uses LAN technologies to connect between devices
 * Zigbee
 * KNX
 
-Quite flexible if devices are compatible from manufacutrers side. Open-end solution, enables system expansion with large range of devices.
-
-[link to presentation]()
+Quite flexible if devices are compatible from manufacturers side. Open-end solution, enables system expansion with large range of devices.
 
 ##### Lab Work
 
 RFID reader + smart lock
 
 Done the wiring of the Wemos chips and peripherals, like smart lock and RFID reader. The rest of the team worked on the node-red implementation and mqtt communication.
-
-[link to documentation]()
