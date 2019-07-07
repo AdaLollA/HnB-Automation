@@ -172,3 +172,7 @@ Turns out that the Pi was using an updated version that is not compatible with t
             }
         }
         ```
+
+### Thoughts/Opinion
+The first day of IoT was already very stressful. Getting the information right away, that you are not taught but instead thrown into cold water and left to fend for your own was not very amusing. I expect HaBA already to be very stressful, especially with the tight schedule the sheer amount of work to do in such a short time with no previous knowledge whatsoever.
+I have not worked with a Raspberry Pi or the provided hardware before and are told to let magic happen. The frustration is real.

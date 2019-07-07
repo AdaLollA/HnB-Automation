@@ -3,29 +3,159 @@
 ## S1810455024, Alexander Stelzhammer
 
 ### Presentation: BacNET, LonWorks, ModBus
-
 - More research has to be done:
-  - Compare KNX and BacNET
   - Look up if there is a discovery protocol for ModBus
+
+This question is answered by [Iris](../../Lecture%20Iris/Lecture%204/ReadMe.md#Discovery).
 
 ### Presentations of the others teams
 
 #### Zigbee, Zwave, X10, DMX
+##### Zigbee
+- mesh topology (star, tree or net)
+- wireless communication protocol with focus on machine to machine communication
+- operating in same or overlapping areas of networks (internet) which can interfer (according to Ulno)
+- end-devices only communicate with their parent nodes
+- scalable, not breaking if removing/adding nodes dynamically
+- no single point of failure
+- self-healing
+- domain:
+    - home
+    - building
+    - industrial
+    - retail
+    - health
+- usage:
+    - smart metering
+    - smart grid monitoring
+- devices using/supporting:
+    - Amazon Echo Plus
+    - Philips Hue
+    - Nuki Smart Locks
 
-- ...
+##### Z-Wave
+- less expensive than Zigbee
+- focus on home automation
+- independent of central hub
+- simple setup
+- low latency
+- 100 kBit/s
+- range: up to 150 m
+- domain: home automation
 
-#### SPI, I2C, Onewire, rs-232/rs-422/485
 
-- ...
+##### X10
+- simple communication protocol
+- devices very cheap
+- low throughput
+- latency: 1/2 to 3/4 second to receive responder
+- interferences in power circuit can cause problems for further distances
+- mostly used in US
+
+
+##### DMX
+- used for light control, fog machines, dimmers, christmas light
+- digital communication, RS-485 for physical layer
+- shielded twisted pair
+- asynchronous serial data
+
+#### SPI, I2C, Onewire, RS-232/RS-422/485
+- full-duplex synchronous data bus
+- clock, data and select lines
+- data transmission between microcontrollers and small peripherals
+- very high binary rate
+- 3 types of signal:
+    1. MOSI
+    2. MISO
+    3. SS
+- virtual ring topology
+- communication on different protocols:
+    - USB
+    - Ethernet
+    - ...
+
+##### I²C (Inter-Integrated Circuit Bus)
+- only two wires:
+    1. SDA: data transmission
+    2. SCL: clock
+- limited to about 10 meters
+- bus speed determined by slowest node on bus
+- allows multi master
+- can have 127 slaves to one master because of address space
+- typically much slower than SPI
+- slave can keep clock low if he needs more time to process
+- one of the easiest bus systems to set up
+- used between microcontrollers
+- simple and low cost
+- discovery possible? (what devices are on I²C bus?) 
+    - yes (a little), because they have addresses
+    - some addresses are reserved for specific devices
+
+##### OneWire
+- one data line + ground reference for communication
+- parasitically powered
+- slaves have unique ID from manufacturer
+- up to 300 meters
+- up to 75 devices on one bus
+- rather slow
+- very simple!
+
+##### RS-232
+- = serial port
+- was used widely to connect f.e. modems to other devices
+- straight or twisted pair cable
+- 15-30 m distance (theoretical limit: 300 m)
+
+
+##### RS-485
+- three state logic
+    - individual transmitters can be deactivated
+    - linear bus topology
+    - two wires
+- Master - Slave
+- three signals
+    - sending
+    - receiving
+    - on/off
+- applications
+    - programmable logic controllers
+    - factory floows
+    - physicl layer in many automation protocols (Modbus, Profibus)
+    - lighting controllers in theaters
 
 #### KNX-bus/ Ebus, Canbus
+##### KNX
+- separate power supply and device control into two separate networks
+- devices made by different manufacturers
+- devices just plugged in (= actors)
+- sends plain text data
 
-- ...
+##### Ebus
+- control heating & solar components
+- European standard, mostly developed and used by German companies
+- can provide power to participants
+- 2 wires, twisted pair
+- fixed data rate: 2400 baud -> very slow!
+- start and stop bits
+
+
+##### CAN Bus
+- mainly used in car industry
+- CAN Bus Low: very cheap, not so secure, slower
+- CAN Bus High: more expensive, securer, faster
+- supports different bus structures, but normally normal bus used
+- dominant and recessive state, have also priority
+
+
+### Exercise: KNX - Part I
+I completed the KNX tutorial and got the KNX-Certificate. It can be found [here](./KNX_Certification_Stelzhammer.pdf).
 
 ### Exercise: Philips Hue
-
+The Philips Hue were made adjustable using Node-RED. A simple user interface was provided to adjust the brightness and the color. The inputs were connected to the respective light bulb(s). In Node-RED the input is transformed into a respective JSON object that can be interpreted by the Philip Hue bulbs.
+The configuration can be seen below:
 ![node_red_configuration]
 
+An export of the configuration can be seen below:
 ```json
 [
   {
@@ -191,3 +321,10 @@
 
 [node_red_configuration]: ./Exercise%20-%20Philips%20Hue%20and%20NodeRED/NodeRED_Configuration.PNG
 [user_interface]: ./Exercise%20-%20Philips%20Hue%20and%20NodeRED/NodeRED_UI.PNG
+
+
+### Thoughts/Opinion
+The presentations were very boring. There were too many protocols and it was hard to distinguish what exactly is state of the art right now. Also, it was rather difficult to find answers to the questions provided by Ulno. 
+
+The KNX exercise was pretty bad as well. There were no clear instructions on what to do or even how to get started. Despite having completed the KNX tutorial, we were not able to even connect to the KNX system. After 30 minutes of frustration, we decided to get help from Ulno who then helped us get started.
+Additionally, we did not know what KNX software to download and there were even problems installing it on our laptop. There was so much other work (besides KNX) to do that we did not have enough time to actually play around with KNX. We did the bare minimum because otherwise there would not have been time for the other assignments (e.g. RFID Smart Lock).

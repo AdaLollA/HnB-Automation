@@ -1,6 +1,8 @@
 # Challenge: Analog Light Sensor
 ## Alexander Stelzhammer, S1810455024
 
+This task was done with the help of Iris. To see her side of the documentation, please refer to [her documentation](../../../../Lecture%20Iris/Lecture%202/ReadMe.md#Analog%20Light%20Sensor).
+
 ### Task
 Using an analog light sensor the current brightness should be plotted as both a gauge and as a chart.
 

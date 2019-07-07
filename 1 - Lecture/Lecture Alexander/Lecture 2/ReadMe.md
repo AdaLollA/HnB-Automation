@@ -2,6 +2,8 @@
 ## S1810455024, Alexander Stelzhammer
 
 ### Exercise: Let’s Switch on a Light
+This task was done with the help of Iris. To see her side of the documentation, please refer to [her documentation](../../Lecture%20Iris/Lecture%202/ReadMe.md#Lighting%20an%20LED%20Day%202).
+
 Turns out that the Pi was using an updated version that is not compatible with the image from the previous lecture. Ulno uploaded a new image and/or provided commands to upgrade 
 - Downloaded the new image
 - Flashed the Pi using the new image
@@ -119,3 +121,6 @@ Turns out that the Pi was using an updated version that is not compatible with t
 
 ### Challenge: Analog Light Sensor
 [Can be found here](./Challenges/Analog%20Light%20Sensor/ReadMe.md)
+
+### Thoughts/Opinion
+Slowly, things are starting to make sense. However, the framework is still magic to me and why everything works the way it does will hopefully be answered in the coming lectures. There were small achievements today, so the frustration is stating to wear off. I am curios how the coming lectures will go.
